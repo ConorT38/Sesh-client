@@ -24,9 +24,6 @@ public class HttpHandlerImpl implements HttpHandler {
 
     @Override
     public String login(String username, String password) throws Exception {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        RestTemplate restTemplate = new RestTemplate();
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
         map.add("username", Authentication.encrypt(username));
@@ -36,8 +33,23 @@ public class HttpHandlerImpl implements HttpHandler {
     }
 
     @Override
-    public String signup(String username, String email, String password) {
-        return "yo";
+    public String checkLogin(String cookie) throws Exception {
+
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+        map.add("sesh", cookie);
+        System.out.println(cookie);
+
+        return post(map,"/check/login");
+    }
+
+    @Override
+    public String signup(String username, String email, String password) throws Exception {
+
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+        map.add("username", Authentication.encrypt(username));
+        map.add("password", Authentication.hashPassword(password));
+
+        return post(map,"/login");
     }
 
     @Override

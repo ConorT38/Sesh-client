@@ -2,32 +2,297 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="789e343d-44a4-4691-82ad-1438b9d50116" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/application.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/buttons.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/css(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/dashicons.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/flexslider.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/imgareaselect.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/media-views.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/mediaelementplayer.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/purple.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/toolkit.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/util.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/woocommerce-layout.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/woocommerce-smallscreen.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/woocommerce.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/css/wp-mediaelement.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_4_5_1.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_crypto_1_0_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20160810.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_5_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_1.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_10.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_10.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_11.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_11.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_12.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_12.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_13.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_13.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_14.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_14.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_15.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_15.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_16.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_16.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_17.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_17.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_18.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_18.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_2.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_5.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_5.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_6.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_6.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_7.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_7.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_8.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_8.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_9.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_9.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/account.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/account.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/angular.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/angular.min.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/App/application.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/App/application.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/ads/homeSponsored.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/ads/homeSponsored.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/alerts/topRightHomeAlert.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/alerts/topRightHomeAlert.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/likesContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/likesContainer.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/modals/messagesModal.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/modals/messagesModal.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/photosContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/photosContainer.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Application.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Application.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/CommentController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/CommentController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/LoginController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/SignupController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/SignupController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/StatusController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/StatusController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserReviewController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserReviewController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Http/HttpHandler.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Http/HttpHandler.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Http/Impl/HttpHandlerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Http/Impl/HttpHandlerImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Utils/Authentication.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Utils/Authentication.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/application.css" afterPath="$PROJECT_DIR$/target/classes/static/css/application.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/buttons.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/buttons.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css" afterPath="$PROJECT_DIR$/target/classes/static/css/css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/css(1)" afterPath="$PROJECT_DIR$/target/classes/static/css/css(1)" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/dashicons.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/dashicons.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/flexslider.css" afterPath="$PROJECT_DIR$/target/classes/static/css/flexslider.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/imgareaselect.css" afterPath="$PROJECT_DIR$/target/classes/static/css/imgareaselect.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/media-views.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/media-views.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/mediaelementplayer.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/mediaelementplayer.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/purple.css" afterPath="$PROJECT_DIR$/target/classes/static/css/purple.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/toolkit.css" afterPath="$PROJECT_DIR$/target/classes/static/css/toolkit.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/util.css" afterPath="$PROJECT_DIR$/target/classes/static/css/util.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/woocommerce-layout.css" afterPath="$PROJECT_DIR$/target/classes/static/css/woocommerce-layout.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/woocommerce-smallscreen.css" afterPath="$PROJECT_DIR$/target/classes/static/css/woocommerce-smallscreen.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/woocommerce.css" afterPath="$PROJECT_DIR$/target/classes/static/css/woocommerce.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/wp-mediaelement.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/wp-mediaelement.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/animated.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/animated.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/core.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/core.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/fixed-width.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/font-awesome.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/icons.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/icons.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/larger.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/larger.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/list.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/list.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/mixins.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/mixins.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/path.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/path.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/screen-reader.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/screen-reader.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/stacked.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/stacked.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/variables.less" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/less/variables.less" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_animated.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_animated.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_core.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_core.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_icons.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_larger.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_list.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_list.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_path.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_path.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.css" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.min.css" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" afterPath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" afterPath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_7.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_7.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.bundle.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/Chart.bundle.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/Chart.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/account.js" afterPath="$PROJECT_DIR$/target/classes/static/js/account.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/analytics.js" afterPath="$PROJECT_DIR$/target/classes/static/js/analytics.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/angular.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/angular.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/application.js" afterPath="$PROJECT_DIR$/target/classes/static/js/application.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chart.js" afterPath="$PROJECT_DIR$/target/classes/static/js/chart.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-migrate.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js(1)" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js(1)" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/js" afterPath="$PROJECT_DIR$/target/classes/static/js/js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plupload.full.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/plupload.full.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/popper.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/popper.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/popper.min.js(1)" afterPath="$PROJECT_DIR$/target/classes/static/js/popper.min.js(1)" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/scripts.js" afterPath="$PROJECT_DIR$/target/classes/static/js/scripts.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/tether.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tether.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/toolkit.js" afterPath="$PROJECT_DIR$/target/classes/static/js/toolkit.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/utils.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/utils.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/wp-emoji-release.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/wp-emoji-release.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animate/animate.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animate/animate.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/countdowntime/countdowntime.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/countdowntime/countdowntime.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/App/application.html" afterPath="$PROJECT_DIR$/target/classes/templates/App/application.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" afterPath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/example.html" afterPath="$PROJECT_DIR$/target/classes/templates/example.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/likesContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/likesContainer.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/status.html" afterPath="$PROJECT_DIR$/target/classes/templates/status.html" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/sesh-client-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/sesh-client-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/sesh-client-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/sesh-client-1.0-SNAPSHOT.jar.original" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +307,23 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="-170">
+              <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+              <folding>
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#745#746#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -52,7 +332,7 @@
       <file leaf-file-name="Login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login/Login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
+            <state relative-caret-position="630">
               <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
               <folding />
             </state>
@@ -62,28 +342,48 @@
       <file leaf-file-name="HttpHandlerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="245">
+              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1030#1046#0" expanded="true" />
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1338#1339#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-                <element signature="e#1433#1434#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
-                <element signature="e#1599#1600#0" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1700#1701#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
-                <element signature="e#2172#2203#0" expanded="true" />
+                <element signature="e#865#881#0" expanded="true" />
+                <element signature="e#1204#1220#0" expanded="true" />
+                <element signature="e#1516#1532#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+                <element signature="e#1802#1803#0" expanded="true" />
+                <element signature="e#1865#1866#0" expanded="true" />
+                <element signature="e#1892#1893#0" expanded="true" />
+                <element signature="e#1968#1969#0" expanded="true" />
+                <element signature="e#1995#1996#0" expanded="true" />
+                <element signature="e#2069#2070#0" expanded="true" />
+                <element signature="e#2096#2097#0" expanded="true" />
+                <element signature="e#2541#2572#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authentication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authentication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -123,7 +423,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
@@ -147,12 +446,13 @@
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/account.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -387,6 +687,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -450,14 +751,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -679,14 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/status.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -711,56 +996,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login/Login.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
+        <state relative-caret-position="68">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login/Login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        <state relative-caret-position="630">
+          <caret line="111" column="2" lean-forward="false" selection-start-line="111" selection-start-column="2" selection-end-line="111" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        <state relative-caret-position="153">
+          <caret line="9" column="82" lean-forward="false" selection-start-line="9" selection-start-column="82" selection-end-line="9" selection-end-column="82" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+          <folding>
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+        <state relative-caret-position="245">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1030#1046#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1406#1407#0" expanded="true" />
-            <element signature="e#1433#1434#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#2172#2203#0" expanded="true" />
+            <element signature="e#865#881#0" expanded="true" />
+            <element signature="e#1204#1220#0" expanded="true" />
+            <element signature="e#1516#1532#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#1865#1866#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#1995#1996#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+            <element signature="e#2541#2572#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="34">
+          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>
