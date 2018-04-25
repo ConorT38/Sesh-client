@@ -2,6 +2,7 @@ package ie.sesh.Http.Impl;
 
 import ie.sesh.Http.HttpHandler;
 import ie.sesh.Utils.Authentication;
+import ie.sesh.Utils.CookieUtils;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -14,6 +15,9 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletResponse;
+import java.util.Base64;
 
 
 @Component
@@ -22,14 +26,27 @@ public class HttpHandlerImpl implements HttpHandler {
     @Autowired
     private Environment env;
 
+    @Autowired
+    CookieUtils cookieUtils;
+
     @Override
-    public String login(String username, String password) throws Exception {
+    public String login(String username, String password, HttpServletResponse response) throws Exception {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-        map.add("username", Authentication.encrypt(username));
-        map.add("password", Authentication.hashPassword(password));
+        //map.add("username", Authentication.encrypt(username));
+        //map.add("password", Authentication.hashPassword(password));
+        map.add("username", username);
+        map.add("password", password);
 
-        return post(map,"/login");
+        System.out.println("RETURN FROM API COOKIE: "+cookieUtils.filterCookieResponse(post(map,"/login"),cookieUtils.COOKIE_VALUE));
+        String cookieValue = new String(Base64.getEncoder().encode(cookieUtils.filterCookieResponse(post(map,"/login"),cookieUtils.COOKIE_VALUE).getBytes()));
+
+        Cookie seshCookie = new Cookie("sesh", cookieValue);
+        seshCookie.setMaxAge(100000);
+
+        response.addCookie(seshCookie);
+
+        return cookieValue;
     }
 
     @Override
@@ -37,19 +54,23 @@ public class HttpHandlerImpl implements HttpHandler {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
         map.add("sesh", cookie);
-        System.out.println(cookie);
+        System.out.println("CheckLogin: "+cookie);
 
         return post(map,"/check/login");
     }
 
     @Override
-    public String signup(String username, String email, String password) throws Exception {
+    public String signup(String name, String username, String email, String password, HttpServletResponse response) throws Exception {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-        map.add("username", Authentication.encrypt(username));
-        map.add("password", Authentication.hashPassword(password));
+       // map.add("username", Authentication.encrypt(username));
+        //map.add("password", Authentication.hashPassword(password));
+        map.add("username", username);
+        map.add("password", password);
+        map.add("email", Authentication.encrypt(email));
+        map.add("name", Authentication.encrypt(name));
 
-        return post(map,"/login");
+        return post(map,"/register/user");
     }
 
     @Override

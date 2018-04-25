@@ -1,5 +1,6 @@
 ie\sesh\Controllers\LoginController.class
 ie\sesh\Controllers\UserReviewController.class
+ie\sesh\Utils\CookieUtils.class
 ie\sesh\Controllers\UserController.class
 ie\sesh\Application.class
 ie\sesh\Controllers\StatusController.class

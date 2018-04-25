@@ -33,7 +33,7 @@
 <div class="limiter" ng-app="loginApp" ng-controller="loginController">
     <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
         <div class="wrap-login100">
-            <form class="login100-form validate-form">
+            <div class="login100-form validate-form">
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -43,12 +43,12 @@
 					</span>
 
                 <div class="wrap-input100 validate-input" data-validate = "Enter username">
-                    <input class="input100" type="text" name="username" placeholder="Username">
+                    <input class="input100" type="text" name="username" id="us" placeholder="Username">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Enter password">
-                    <input class="input100" type="password" name="pass" placeholder="Password">
+                    <input class="input100" type="password" name="pass" id='ps' placeholder="Password">
                     <span class="focus-input100" data-placeholder="&#xf191;"></span>
                 </div>
 
@@ -73,7 +73,7 @@
                         | Signup
                     </a>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
@@ -99,18 +99,21 @@
 <script src="js/main.js"></script>
 
 <script>
-    var data = JSON.stringify({username: "conor",password: "Duckburg"});
+
     $("#loginbtn").click(function(){
+    var username = document.getElementById("us").value;
+    var password = document.getElementById("ps").value;
+    var data = JSON.stringify({username: username,password: password});
     $.ajax({
   url:"/login",
   type:"POST",
   data:data,
   contentType:"application/json; charset=utf-8",
   dataType:"json",
-  success: function(){
-    alert("Data: " + data + "\nStatus: " + status);
+  success: function(data,status){
   }
     });
+    
 });
 </script>
 </body>
