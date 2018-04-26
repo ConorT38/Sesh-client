@@ -3,6 +3,7 @@ package ie.sesh.Controllers;
 import ie.sesh.Http.HttpHandler;
 import ie.sesh.Utils.CookieUtils;
 
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class LoginController {
+
+    private static final Logger log = Logger.getLogger(LoginController.class);
 
     @Autowired
     HttpHandler http;
@@ -43,7 +46,7 @@ public class LoginController {
     @PostMapping("/login")
     @ResponseBody
     public String login(@RequestBody String data, HttpServletResponse response) throws Exception{
-        System.out.println(data);
+        log.info(data);
         JSONObject obj = new JSONObject(data);
 
         String username = obj.getString("username");
@@ -55,7 +58,7 @@ public class LoginController {
     @PostMapping("/check/login")
     @ResponseBody
     public String checkLogin(@RequestBody String cookie_data) throws Exception{
-        System.out.println(cookie_data);
+        log.info(cookie_data);
         JSONObject obj = new JSONObject(cookie_data);
 
         String cookie = obj.getString("sesh");

@@ -98,7 +98,7 @@
 <script src="js/main.js"></script>
 <script>
     $("#signupBtn").click(function(){
-        var username = document.getElementById("us").value;
+    var username = document.getElementById("us").value;
     var password = document.getElementById("ps").value;
     var email = document.getElementById("email").value;
     var name = document.getElementById("fullName").value;
@@ -117,7 +117,10 @@
   contentType:"application/json; charset=utf-8",
   dataType:"json",
   success: function(data,status){
-  }
+  },
+  error:function(){
+             window.location.href = '../';
+           }
     });
 
 });

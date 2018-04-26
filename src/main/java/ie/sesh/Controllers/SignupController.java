@@ -3,6 +3,7 @@ package ie.sesh.Controllers;
 import ie.sesh.Http.HttpHandler;
 import ie.sesh.Utils.CookieUtils;
 
+import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class SignupController {
+
+    private static final Logger log = Logger.getLogger(SignupController.class);
 
     @Autowired
     HttpHandler http;
@@ -27,7 +30,7 @@ public class SignupController {
     @PostMapping("/register/user")
     @ResponseBody
     public String registerUser(@RequestBody String user_data, HttpServletResponse response) throws Exception{
-        System.out.println(user_data);
+        log.info(user_data);
         JSONObject obj = new JSONObject(user_data);
 
         String username = obj.getString("username");

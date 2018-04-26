@@ -4,6 +4,9 @@ import ie.sesh.Http.HttpHandler;
 import ie.sesh.Utils.Authentication;
 import ie.sesh.Utils.CookieUtils;
 
+import org.apache.log4j.Logger;
+import org.json.JSONArray;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpEntity;
@@ -15,13 +18,19 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Base64;
 
 
+
 @Component
 public class HttpHandlerImpl implements HttpHandler {
+
+    private static final Logger log = Logger.getLogger(HttpHandlerImpl.class);
+
+    final String SESH_COOKIE_NAME = "sesh";
+    final String USER_ID_COOKIE_NAME = "ul";
+    final int SESH_COOKIE_LIFETIME = 100000;
 
     @Autowired
     private Environment env;
@@ -33,20 +42,27 @@ public class HttpHandlerImpl implements HttpHandler {
     public String login(String username, String password, HttpServletResponse response) throws Exception {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+
         //map.add("username", Authentication.encrypt(username));
         //map.add("password", Authentication.hashPassword(password));
+
         map.add("username", username);
         map.add("password", password);
 
-        System.out.println("RETURN FROM API COOKIE: "+cookieUtils.filterCookieResponse(post(map,"/login"),cookieUtils.COOKIE_VALUE));
-        String cookieValue = new String(Base64.getEncoder().encode(cookieUtils.filterCookieResponse(post(map,"/login"),cookieUtils.COOKIE_VALUE).getBytes()));
+        String postResult = post(map,"/login");
+        String loginResult = cookieUtils.filterCookieResponse(postResult,cookieUtils.COOKIE_VALUE);
+        log.info("RETURN FROM API COOKIE: "+loginResult);
 
-        Cookie seshCookie = new Cookie("sesh", cookieValue);
-        seshCookie.setMaxAge(100000);
+        JSONArray obj = new JSONArray("["+loginResult+"]");
+        log.info(obj.toString());
 
-        response.addCookie(seshCookie);
+        String useridValue = cookieUtils.getUserIdCookie(obj);
+        String tokenValue = new String(Base64.getEncoder().encode(cookieUtils.getTokenCookie(obj).getBytes()));
 
-        return cookieValue;
+        cookieUtils.addCookie(SESH_COOKIE_NAME, tokenValue, SESH_COOKIE_LIFETIME, response);
+        cookieUtils.addCookie(USER_ID_COOKIE_NAME, useridValue, SESH_COOKIE_LIFETIME, response);
+
+        return postResult;
     }
 
     @Override
@@ -54,7 +70,7 @@ public class HttpHandlerImpl implements HttpHandler {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
         map.add("sesh", cookie);
-        System.out.println("CheckLogin: "+cookie);
+        log.info("CheckLogin: "+cookie);
 
         return post(map,"/check/login");
     }
@@ -63,14 +79,29 @@ public class HttpHandlerImpl implements HttpHandler {
     public String signup(String name, String username, String email, String password, HttpServletResponse response) throws Exception {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-       // map.add("username", Authentication.encrypt(username));
+        //map.add("username", Authentication.encrypt(username));
         //map.add("password", Authentication.hashPassword(password));
+        //map.add("email", Authentication.encrypt(email));
+        //map.add("name", Authentication.encrypt(name));
+
         map.add("username", username);
         map.add("password", password);
-        map.add("email", Authentication.encrypt(email));
-        map.add("name", Authentication.encrypt(name));
+        map.add("email", email);
+        map.add("name", name);
 
         return post(map,"/register/user");
+    }
+
+    @Override
+    public String logout(String id, HttpServletResponse response) throws Exception {
+
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+        map.add("id", id);
+
+        cookieUtils.cookieLogout(response);
+        post(map,"/logout");
+
+        return "Login/Login";
     }
 
     @Override
@@ -95,7 +126,7 @@ public class HttpHandlerImpl implements HttpHandler {
 
     public String post(MultiValueMap<String,String> data, String path){
         String url = env.getProperty("sesh.api.host")+":"+env.getProperty("sesh.api.port")+path;
-        System.out.println(url);
+        log.info(url);
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         RestTemplate restTemplate = new RestTemplate();
