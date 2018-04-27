@@ -1,5 +1,6 @@
 package ie.sesh.Http.Impl;
 
+import com.google.gson.Gson;
 import ie.sesh.Http.HttpHandler;
 import ie.sesh.Utils.Authentication;
 import ie.sesh.Utils.CookieUtils;
@@ -7,6 +8,7 @@ import ie.sesh.Utils.CookieUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpEntity;
@@ -21,6 +23,7 @@ import org.springframework.web.client.RestTemplate;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Base64;
 
+import static ie.sesh.Utils.SeshConstants.SESH_COOKIE_NAME;
 
 
 @Component
@@ -69,7 +72,7 @@ public class HttpHandlerImpl implements HttpHandler {
     public String checkLogin(String cookie) throws Exception {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-        map.add("sesh", cookie);
+        map.add(SESH_COOKIE_NAME, cookie);
         log.info("CheckLogin: "+cookie);
 
         return post(map,"/check/login");
@@ -121,7 +124,22 @@ public class HttpHandlerImpl implements HttpHandler {
 
     @Override
     public String load(int id, String data, String path) {
-        return "yo";
+
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+
+        map.add("id", Integer.toString(id));
+
+        if(data != null && !data.isEmpty()) {
+            JSONObject obj = new JSONObject(data);
+
+            for(int i = 0; i<obj.names().length(); i++){
+                log.info("key = " + obj.names().getString(i) + " value = " + obj.get(obj.names().getString(i)));
+                map.add(obj.names().getString(i),obj.get(obj.names().getString(i)).toString());
+            }
+
+        }
+        log.info("Map: "+new Gson().toJson(map));
+        return post(map,path);
     }
 
     public String post(MultiValueMap<String,String> data, String path){

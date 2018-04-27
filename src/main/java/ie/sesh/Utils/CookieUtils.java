@@ -6,10 +6,14 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.ui.Model;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 @Component
 public class CookieUtils {
@@ -39,37 +43,63 @@ public class CookieUtils {
             return "false";
         }
         cookie = cookie.substring(1, cookie.length()-1);
-        log.info(cookie);
+        log.info("Filtered response: "+cookie);
 
-        String[] response = cookie.split(",", 3);
-        log.info(response[0]);
+        String[] responseCheck = cookie.split(",", 2);
+        log.info("Returned with response code: "+responseCheck[0]);
 
-        if(response.length <1){
+        if(responseCheck.length <1){
             return "false";
         }
-        switch (index){
-            case HTTP_RESPONSE:
-                return response[HTTP_RESPONSE];
-            case COOKIE_VALUE:
-                return response[COOKIE_VALUE];
-            case CONTENT_TYPE:
-                return response[CONTENT_TYPE];
-            default:
-                return cookie;
+
+        // If the cookie is a json response
+        if(responseCheck[1].charAt(0) == '{'){
+            responseCheck[1] = responseCheck[1].replaceAll("\\}\\,(.*)","}");
+            log.info("Response Data: "+ responseCheck[1]);
+            return responseCheck[1];
+        }
+        else{
+            // Else if it is a comma-less datatype
+            String[] response = cookie.split(",", 3);
+            switch (index){
+                case HTTP_RESPONSE:
+                    return response[HTTP_RESPONSE];
+                case COOKIE_VALUE:
+                    return response[COOKIE_VALUE];
+                case CONTENT_TYPE:
+                    return response[CONTENT_TYPE];
+                default:
+                    return cookie;
+            }
         }
     }
 
-    public String loggedInRedirect(String cookie, String path) throws Exception{
+    public ModelAndView loggedInRedirect(String cookie, String userId, String path) throws Exception{
         log.info("COOKIE: "+cookie);
+        Map<String,String> map = new HashMap<String,String>();
 
         if(!cookie.isEmpty() && cookie != null) {
             if (filterCookieResponse(http.checkLogin(cookie), CookieUtils.COOKIE_VALUE).equals("false")) {
-                return path;
+                return new ModelAndView(path,map);
             } else {
-                return "App/application";
+                String response = http.load(Integer.parseInt(userId),"","/get/user");
+
+                log.info("User details: "+filterCookieResponse(response,CookieUtils.COOKIE_VALUE)+"");
+                JSONObject obj = new JSONObject(filterCookieResponse(response,CookieUtils.COOKIE_VALUE));
+
+                for(int i = 0; i<obj.names().length(); i++){
+
+                    String key = obj.names().getString(i);
+                    String value = obj.get(obj.names().getString(i)).toString();
+
+                    log.info("key = " + key + " value = " + value);
+                    map.put( obj.names().getString(i),obj.get(obj.names().getString(i)).toString());
+                }
+
+                return new ModelAndView("App/application","user",map);
             }
         }
-        return path;
+        return new ModelAndView(path,map);
     }
 
     public void cookieLogout(HttpServletResponse response){

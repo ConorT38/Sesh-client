@@ -7,7 +7,9 @@ import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -23,8 +25,9 @@ public class SignupController {
     CookieUtils cookieUtils;
 
     @RequestMapping("/Signup")
-    public String getSignup(@CookieValue(name="sesh", defaultValue = "") String cookie) throws Exception{
-        return cookieUtils.loggedInRedirect(cookie,"Signup/Signup");
+    public ModelAndView getSignup(@CookieValue(name="sesh", defaultValue = "") String cookie,
+                                  @CookieValue(name="ul",defaultValue = "") String id) throws Exception{
+        return cookieUtils.loggedInRedirect(cookie,id,"Signup/Signup");
     }
 
     @PostMapping("/register/user")
