@@ -1,4 +1,4 @@
-<div class="fm" th:fragment="liveFeed">
+<div class="fm" id="liveFeed" th:fragment="liveFeed">
 
     <ul class="ca bow box afo">
 
@@ -7,11 +7,12 @@
                 <input type="text" id="statusMsg" class="form-control" placeholder="Message">
                 <div class="bpt">
                     <button type="button" id="statusBtn" class="cg ns yf">
-                        <i class="fas fa-paper-plane"></i>
+                        <i id="statusLoadIcon" class="fas fa-paper-plane"></i>
                     </button>
                 </div>
             </div>
         </li>
+        <div th:replace="fragments/status :: status"></div>
 
         <li class="rv b agz">
             <img class="bos vb yb aff" src="images/avatar-dhg.png">

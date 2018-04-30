@@ -4,6 +4,8 @@ ie\sesh\Application.class
 ie\sesh\Controllers\StatusController.class
 ie\sesh\Utils\SeshConstants.class
 ie\sesh\Controllers\SignupController.class
+ie\sesh\Model\Status.class
+ie\sesh\Utils\StatusUtils.class
 ie\sesh\Utils\Authentication.class
 ie\sesh\Http\Impl\HttpHandlerImpl.class
 ie\sesh\Utils\CookieUtils.class

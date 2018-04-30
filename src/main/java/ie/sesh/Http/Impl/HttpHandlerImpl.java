@@ -108,8 +108,22 @@ public class HttpHandlerImpl implements HttpHandler {
     }
 
     @Override
-    public String create(String data, String path) {
-        return "yo";
+    public String create(int id, String data, String path) {
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
+
+        map.add("id", Integer.toString(id));
+
+        if(data != null && !data.isEmpty()) {
+            JSONObject obj = new JSONObject(data);
+
+            for(int i = 0; i<obj.names().length(); i++){
+                log.info("key = " + obj.names().getString(i) + " value = " + obj.get(obj.names().getString(i)));
+                map.add(obj.names().getString(i),obj.get(obj.names().getString(i)).toString());
+            }
+
+        }
+        log.info("Map: "+new Gson().toJson(map));
+        return post(map,path);
     }
 
     @Override
