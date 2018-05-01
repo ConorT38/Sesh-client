@@ -1,13 +1,15 @@
+  function loadFeed(){
   $.ajax({
   url:"/get/all/status",
-  type:"POST",
+  type:"GET",
   contentType:"application/json; charset=utf-8",
   dataType:"json",
   error:function(){},
   complete:function(data){
-    ('#liveFeed').load(document.URL +  ' #liveFeed');
+   $('#liveFeed').html(data.responseText);
   }
     });
+    }
 
   $("#statusBtn").click(function(){
     document.getElementById("statusLoadIcon").className="fas fa-spinner fa-spin";
@@ -31,9 +33,11 @@
   dataType:"json",
   error:function(){},
   complete:function(data){
-  //alert(JSON.stringify(data));
+  alert(JSON.stringify(data));
   document.getElementById("statusLoadIcon").className="fas fa-paper-plane";
   document.getElementById("statusMsg").value="";
+
+  loadFeed();
   }
     });
 

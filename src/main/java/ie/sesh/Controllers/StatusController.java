@@ -28,11 +28,11 @@ public class StatusController {
     @Autowired
     CookieUtils cookieUtils;
 
-    @PostMapping("/get/all/status")
+    @GetMapping("/get/all/status")
     @ResponseBody
     public ModelAndView getAllStatus(@CookieValue(name="ul",defaultValue = "") String id, Model model){
             model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/status")));
-            return new ModelAndView("statuses :: status");
+            return new ModelAndView("fragments/status :: status");
     }
 
     @PostMapping("/create/status")

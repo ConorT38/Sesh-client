@@ -1,6 +1,7 @@
 package ie.sesh.Model;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 public class Status {
 
@@ -11,7 +12,7 @@ public class Status {
     private int location;
     private int likes;
 
-    private Date date;
+    private Timestamp date;
 
     // uses User ID
     private String going;
@@ -20,7 +21,7 @@ public class Status {
 
     public Status() {}
 
-    public Status(int user_id, String message, int location, int likes, Date date, String going,String maybe, String not_going) {
+    public Status(int user_id, String message, int location, int likes, Timestamp date, String going,String maybe, String not_going) {
         this.user_id = user_id;
         this.message = message;
         this.location = location;
@@ -71,11 +72,11 @@ public class Status {
         this.likes = likes;
     }
 
-    public Date getDate() {
+    public Timestamp getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Timestamp date) {
         this.date = date;
     }
 

@@ -7,6 +7,9 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Component;
 
 import java.sql.Date;
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -14,6 +17,7 @@ import java.util.List;
 @Component
 public class StatusUtils {
     private static final Logger log = Logger.getLogger(StatusUtils.class);
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
 
     public List<Status> getAllStatuses(String status_data){
         log.info("Status data: "+status_data);
@@ -22,24 +26,52 @@ public class StatusUtils {
         log.info("Filtered data: "+status_data);
 
         JSONArray arr = new JSONArray(status_data);
+        JSONObject ob = new JSONObject(arr.get(0));
         log.info("Filtered array: "+arr.toString());
         log.info("First index: "+arr.get(0).toString());
-        log.info("First index message: "+new JSONObject(arr.get(0)).get("message").toString());
+        //log.info("First index message: "+ob.get("message").toString());
 
         List<Status> statuses = new ArrayList<Status>();
 
         for(int i=0; i<arr.length();i++){
             Status status = new Status();
-            JSONObject obj = new JSONObject(arr.get(i));
+            JSONObject obj = new JSONObject(arr.get(i).toString());
+           log.info("NAMES LENGTH: "+obj.names().length());
+            for(int j = 0; j<obj.names().length(); j++){
 
-            status.setMessage((String) obj.get("message"));
-            status.setLocation((int) obj.get("location"));
-            status.setLikes((int) obj.get("likes"));
-            status.setDate((Date) obj.get("date"));
-            status.setGoing((String) obj.get("going"));
-            status.setMaybe((String) obj.get("maybe"));
-            status.setNot_going((String) obj.get("not_going"));
+                String key = obj.names().getString(j);
+                Object value = (! obj.get(obj.names().getString(j)).toString().isEmpty() || obj.get(obj.names().getString(j))!= null ) ?  obj.get(obj.names().getString(j)) : "";
 
+                switch (key){
+                    case "message":
+                        status.setMessage((String)  checkNullCastType(value,""));
+                        break;
+                    case "location":
+                        status.setLocation((int) value);
+                        break;
+                    case "likes":
+                        status.setLikes((int)value);
+                        break;
+                    case "date":
+                        try {
+                            Long parseDate = dateFormat.parse(checkNullCastType(value, new Timestamp(new java.util.Date().getTime())).toString()).getTime();
+                            status.setDate(new Timestamp(parseDate));
+                        }catch (ParseException e){
+                            log.error("Couldn't parse date, something went wrong");
+                        }
+                        break;
+                    case "going":
+                        status.setGoing((String) checkNullCastType(value,""));
+                        break;
+                    case "maybe":
+                        status.setMaybe((String) checkNullCastType(value,""));
+                        break;
+                    case "not_going":
+                        status.setNot_going((String) checkNullCastType(value,""));
+                        break;
+                }
+                log.info("key = " + key + " value = " + value);
+            }
             statuses.add(status);
         }
         return statuses;
@@ -69,5 +101,9 @@ public class StatusUtils {
         else{
             return status_data;
             }
+        }
+
+        public Object checkNullCastType(Object value, Object cast){
+            return (value == null || value.toString().equals("null")) ? cast : value;
         }
     }
