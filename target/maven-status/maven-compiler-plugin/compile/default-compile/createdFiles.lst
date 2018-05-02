@@ -10,5 +10,6 @@ ie\sesh\Utils\Authentication.class
 ie\sesh\Http\Impl\HttpHandlerImpl.class
 ie\sesh\Utils\CookieUtils.class
 ie\sesh\Controllers\UserController.class
+ie\sesh\Model\User.class
 ie\sesh\Http\HttpHandler.class
 ie\sesh\Controllers\CommentController.class

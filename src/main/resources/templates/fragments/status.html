@@ -3,8 +3,8 @@
     <img class="bos vb yb aff" src="images/avatar-fat.jpg">
     <div class="rw">
         <div class="bpb">
-            <small class="acx axc">4 min</small>
-            <h6>Conor Thompson</h6>
+            <small class="acx axc" name="statusDate" th:text="${status.date}"></small>
+            <h6 th:inline="text">[[${status.name}]] <small style="color:grey;" th:inline="text">@[[${status.username}]]</small></h6>
         </div>
 
         <p th:text="${status.message}">

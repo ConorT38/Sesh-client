@@ -1,12 +1,13 @@
 package ie.sesh.Model;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 public class Status {
 
     private int id;
     private int user_id;
+    private String name;
+    private String username;
 
     private String message;
     private int location;
@@ -21,8 +22,10 @@ public class Status {
 
     public Status() {}
 
-    public Status(int user_id, String message, int location, int likes, Timestamp date, String going,String maybe, String not_going) {
+    public Status(int user_id, String name, String username, String message, int location, int likes, Timestamp date, String going,String maybe, String not_going) {
         this.user_id = user_id;
+        this.name = name;
+        this.username = username;
         this.message = message;
         this.location = location;
         this.likes = likes;
@@ -46,6 +49,22 @@ public class Status {
 
     public void setUser_id(int user_id) {
         this.user_id = user_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getMessage() {

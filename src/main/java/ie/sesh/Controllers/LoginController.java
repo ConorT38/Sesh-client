@@ -32,7 +32,7 @@ public class LoginController {
         if(cookie == null || cookie.isEmpty()){
             cookie = "";
         }
-        return cookieUtils.loggedInRedirect(cookie,userId,"Login/Login");
+        return cookieUtils.loggedInRedirect(cookie,userId,"App/application");
     }
     @RequestMapping("/Logout")
     public String getLogout(@CookieValue(name=SESH_COOKIE_NAME, defaultValue = "") String cookie, HttpServletResponse response) throws Exception{
@@ -44,8 +44,12 @@ public class LoginController {
     }
 
     @RequestMapping("/notifications")
-    public String getNotifications(){
-        return "Notifications/notifications";
+    public ModelAndView getNotifications((@CookieValue(name=SESH_COOKIE_NAME, defaultValue = "") String cookie,
+                                   @CookieValue(name="ul", defaultValue = "") String userId) throws Exception{
+        if(cookie == null || cookie.isEmpty()){
+            cookie = "";
+        }
+        return cookieUtils.loggedInRedirect(cookie,userId,"Notifications/notifications");
     }
 
     @PostMapping("/login")

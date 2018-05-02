@@ -1,29 +1,32 @@
 package ie.sesh.Utils;
 
 import ie.sesh.Model.Status;
+
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.stereotype.Component;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 @Component
 public class StatusUtils {
     private static final Logger log = Logger.getLogger(StatusUtils.class);
-    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss.SSS");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.SSS+SSSS");
 
     public List<Status> getAllStatuses(String status_data){
         log.info("Status data: "+status_data);
         status_data = filterStatusResponse(status_data);
 
         log.info("Filtered data: "+status_data);
+
+        if(status_data.equals("[]")){
+            return null;
+        }
 
         JSONArray arr = new JSONArray(status_data);
         JSONObject ob = new JSONObject(arr.get(0));
@@ -43,6 +46,12 @@ public class StatusUtils {
                 Object value = (! obj.get(obj.names().getString(j)).toString().isEmpty() || obj.get(obj.names().getString(j))!= null ) ?  obj.get(obj.names().getString(j)) : "";
 
                 switch (key){
+                    case "name":
+                        status.setName((String)  checkNullCastType(value,""));
+                        break;
+                    case "username":
+                        status.setUsername((String)  checkNullCastType(value,""));
+                        break;
                     case "message":
                         status.setMessage((String)  checkNullCastType(value,""));
                         break;

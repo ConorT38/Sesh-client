@@ -79,7 +79,7 @@ public class CookieUtils {
 
         if(!cookie.isEmpty() && cookie != null) {
             if (filterCookieResponse(http.checkLogin(cookie), CookieUtils.COOKIE_VALUE).equals("false")) {
-                return new ModelAndView(path,map);
+                return new ModelAndView("Login/Login",map);
             } else {
                 String response = http.load(Integer.parseInt(userId),"","/get/user");
 
@@ -95,10 +95,10 @@ public class CookieUtils {
                     map.put( obj.names().getString(i),obj.get(obj.names().getString(i)).toString());
                 }
 
-                return new ModelAndView("App/application","user",map);
+                return new ModelAndView(path,"user",map);
             }
         }
-        return new ModelAndView(path,map);
+        return new ModelAndView("Login/Login",map);
     }
 
     public void cookieLogout(HttpServletResponse response){

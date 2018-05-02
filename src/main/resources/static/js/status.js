@@ -6,10 +6,20 @@
   dataType:"json",
   error:function(){},
   complete:function(data){
-   $('#liveFeed').html(data.responseText);
-  }
+  if(data.responseText == null){
+        alert("you have no friends");
+    }else{
+   $('#liveFeed').html(data.responseText).promise().done(function(){
+     var statusDates = document.getElementsByName("statusDate");
+
+      for(var i=0; i<statusDates.length;i++){
+      	statusDates[i].innerHTML=timeSince(new Date(statusDates[i].innerHTML));
+         }
+        });
+        }
+       }
     });
-    }
+  }
 
   $("#statusBtn").click(function(){
     document.getElementById("statusLoadIcon").className="fas fa-spinner fa-spin";
