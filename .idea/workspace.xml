@@ -71,12 +71,14 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/SeshConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/SeshConstants.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_1.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_1.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_10.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_10.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_11.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_11.jpg" />
@@ -90,15 +92,17 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_2.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_2.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_5.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_5.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_6.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_6.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_7.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_7.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_7.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/iceland.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_8.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_8.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/instagram_9.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/instagram_9.jpg" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/account.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/account.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/angular.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/angular.min.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/status.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/time.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/time.js" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/App/application.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/App/application.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Signup/Signup.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Signup/Signup.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" />
@@ -114,16 +118,16 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/status.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/status.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Application.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Application.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/CommentController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/CommentController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/SignupController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/SignupController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/StatusController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/StatusController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserReviewController.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserReviewController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Http/HttpHandler.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Http/HttpHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Http/Impl/HttpHandlerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Http/Impl/HttpHandlerImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Utils/Authentication.class" afterPath="$PROJECT_DIR$/target/classes/ie/sesh/Utils/Authentication.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Application.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/CommentController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/LoginController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/SignupController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/StatusController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Controllers/UserReviewController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Http/HttpHandler.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Http/Impl/HttpHandlerImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ie/sesh/Utils/Authentication.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/css/application.css" afterPath="$PROJECT_DIR$/target/classes/static/css/application.css" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/css/buttons.min.css" afterPath="$PROJECT_DIR$/target/classes/static/css/buttons.min.css" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/css/css" afterPath="$PROJECT_DIR$/target/classes/static/css/css" />
@@ -190,47 +194,47 @@
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" afterPath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" afterPath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.bundle.min.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/account.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/account.js" afterPath="$PROJECT_DIR$/target/classes/static/js/account.js" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/analytics.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/angular.min.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/application.js" afterPath="" />
@@ -286,26 +290,26 @@
       <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/App/application.html" afterPath="$PROJECT_DIR$/target/classes/templates/App/application.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" afterPath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/example.html" afterPath="$PROJECT_DIR$/target/classes/templates/example.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/likesContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/likesContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/status.html" afterPath="$PROJECT_DIR$/target/classes/templates/status.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/App/application.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/example.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/likesContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/status.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/sesh-client-1.0-SNAPSHOT.jar" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/sesh-client-1.0-SNAPSHOT.jar.original" afterPath="" />
     </list>
@@ -319,54 +323,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="status.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/status.html">
+      <file leaf-file-name="application.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/App/application.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+            <state relative-caret-position="306">
+              <caret line="18" column="197" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="197" />
               <folding>
-                <element signature="n#style#0;n#small#0;n#h6#0;n#div#0;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CookieUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="100" column="45" lean-forward="false" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="time.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/time.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="51" column="88" lean-forward="false" selection-start-line="51" selection-start-column="88" selection-end-line="51" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="status.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -374,7 +338,7 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="430">
               <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -393,75 +357,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html">
+      <file leaf-file-name="notifications.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#7;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#7;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#8;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#8;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#9;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#9;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#10;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#10;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#11;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#11;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#12;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#12;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#13;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#13;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#14;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#14;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#15;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#15;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="15" column="217" lean-forward="false" selection-start-line="15" selection-start-column="217" selection-end-line="15" selection-end-column="217" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Status.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java">
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="467">
+              <caret line="4" column="36418" lean-forward="false" selection-start-line="4" selection-start-column="36418" selection-end-line="4" selection-end-column="36418" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
               <folding>
-                <element signature="e#1167#1168#0" expanded="true" />
-                <element signature="e#1194#1195#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1266#1267#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#a#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#a#2;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#a#3;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profileContainer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -492,6 +449,10 @@
       <find>js.download</find>
       <find>path</find>
       <find>css</find>
+      <find>afl</find>
+      <find>notifications</find>
+      <find>mentions</find>
+      <find>iceland</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -511,7 +472,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/profile_container.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/photosContainer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/ads/homeSponsored.html" />
@@ -537,7 +497,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/SeshConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" />
@@ -545,15 +504,19 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/time.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/status.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/App/application.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/time.js" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/App/application.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" />
       </list>
     </option>
   </component>
@@ -697,6 +660,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sesh-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sesh-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -716,6 +688,15 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sesh-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sesh-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Notifications" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sesh-client" type="b2602c69:ProjectViewProjectNode" />
@@ -869,21 +850,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.50323623" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.197411" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.197411" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947975" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23867314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18851133" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -933,34 +914,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/photosContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/likesContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="57" selection-end-line="0" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/ads/homeSponsored.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="57" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/alerts/topRightHomeAlert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/analytics.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1079,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1098,14 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="138" lean-forward="false" selection-start-line="5" selection-start-column="138" selection-end-line="5" selection-end-column="138" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="60" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -1149,14 +1087,14 @@
         <state relative-caret-position="255">
           <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="21" />
           <folding>
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1234#1235#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
+            <element signature="e#1301#1302#0" expanded="false" />
+            <element signature="e#1332#1333#0" expanded="false" />
+            <element signature="e#1380#1381#0" expanded="false" />
+            <element signature="e#1420#1421#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1193,47 +1131,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/time.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/App/application.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="105" column="19" lean-forward="false" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="19" />
-          <folding>
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="n#li#1;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1257,49 +1158,7 @@
         <state relative-caret-position="85">
           <caret line="5" column="75" lean-forward="false" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
           <folding>
-            <element signature="n#style#0;n#small#0;n#h6#0;n#div#0;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#6;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#7;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#8;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#8;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#9;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#9;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#10;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#10;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#11;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#11;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#12;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#12;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#13;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#13;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#14;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#14;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#15;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#15;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#h6#0;n#div#0;n#div#0;n#li#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1320,13 +1179,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="408">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="46" column="41" lean-forward="false" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#li#1;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,11 +1222,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="51" column="88" lean-forward="false" selection-start-line="51" selection-start-column="88" selection-end-line="51" selection-end-column="88" />
+        <state relative-caret-position="68">
+          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/fonts/font-awesome-4.7.0/HELP-US-OUT.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="4" column="36418" lean-forward="false" selection-start-line="4" selection-start-column="36418" selection-end-line="4" selection-end-column="36418" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/App/application.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="197" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="197" />
+          <folding>
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="217" lean-forward="false" selection-start-line="15" selection-start-column="217" selection-end-line="15" selection-end-column="217" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="61" column="41" lean-forward="false" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#0;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#1;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#2;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#a#3;n#div#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

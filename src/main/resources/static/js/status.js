@@ -43,7 +43,6 @@
   dataType:"json",
   error:function(){},
   complete:function(data){
-  alert(JSON.stringify(data));
   document.getElementById("statusLoadIcon").className="fas fa-paper-plane";
   document.getElementById("statusMsg").value="";
 

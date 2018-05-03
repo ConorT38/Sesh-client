@@ -44,7 +44,7 @@ public class LoginController {
     }
 
     @RequestMapping("/notifications")
-    public ModelAndView getNotifications((@CookieValue(name=SESH_COOKIE_NAME, defaultValue = "") String cookie,
+    public ModelAndView getNotifications(@CookieValue(name=SESH_COOKIE_NAME, defaultValue = "") String cookie,
                                    @CookieValue(name="ul", defaultValue = "") String userId) throws Exception{
         if(cookie == null || cookie.isEmpty()){
             cookie = "";
