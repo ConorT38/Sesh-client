@@ -45,7 +45,7 @@
   complete:function(data){
   document.getElementById("statusLoadIcon").className="fas fa-paper-plane";
   document.getElementById("statusMsg").value="";
-
+$("#app-growl").append('<div class="alert alert-success alert-dismissible fade show" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>Success! Status uploaded!</div>');
   loadFeed();
   }
     });
