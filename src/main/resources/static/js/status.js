@@ -26,6 +26,7 @@
     var message = document.getElementById("statusMsg").value;
 
     var prep = {};
+    prep['user_id'] = getSeshCookie("ul");
     prep['message'] = message;
     prep['location'] = 0;
     prep['likes'] = 0;
@@ -51,3 +52,8 @@ $("#app-growl").append('<div class="alert alert-success alert-dismissible fade s
     });
 
 });
+function getSeshCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}

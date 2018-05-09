@@ -32,7 +32,6 @@ public class StatusUtils {
         JSONObject ob = new JSONObject(arr.get(0));
         log.info("Filtered array: "+arr.toString());
         log.info("First index: "+arr.get(0).toString());
-        //log.info("First index message: "+ob.get("message").toString());
 
         List<Status> statuses = new ArrayList<Status>();
 
@@ -46,6 +45,9 @@ public class StatusUtils {
                 Object value = (! obj.get(obj.names().getString(j)).toString().isEmpty() || obj.get(obj.names().getString(j))!= null ) ?  obj.get(obj.names().getString(j)) : "";
 
                 switch (key){
+                    case "id":
+                        status.setId((int)  checkNullCastType(value,0));
+                        break;
                     case "name":
                         status.setName((String)  checkNullCastType(value,""));
                         break;

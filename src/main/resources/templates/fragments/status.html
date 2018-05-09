@@ -4,29 +4,20 @@
     <div class="rw">
         <div class="bpb">
             <small class="acx axc" name="statusDate" th:text="${status.date}"></small>
-            <h6 th:inline="text">[[${status.name}]] <small style="color:grey;" th:inline="text">@[[${status.username}]]</small></h6>
+            <a style="text-decoration: none !important;" th:href="@{'/user/@' + ${status.username}}"><h6 th:inline="text">[[${status.name}]] <small style="color:grey;" th:inline="text">@[[${status.username}]]</small></h6></a>
         </div>
 
         <p th:text="${status.message}">
 
         </p>
+        <div class="bottom-align-text" style="margin-top:34px !important;">
+            <div class="row">
+                <div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" href="javascript:void(0)"><i id="likesBeer" onMouseOver="this.style.color='Tomato'" onMouseOut="this.style.color='grey'" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div>
+                <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#" ><small>Comment</small></a></div>
+                <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#"><small>Share</small></a></div>
+            </div>
+        </div>
 
-        <!--<ul class="bow afa">
-            <li class="rv afh">
-                <img class="bos vb yb aff" src="images/avatar-fat.jpg">
-                <div class="rw">
-                    <strong>Jacon Thornton: </strong>
-                    Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
-                </div>
-            </li>
-            <li class="rv">
-                <img class="bos vb yb aff" src="images/avatar-mdo.png">
-                <div class="rw">
-                    <strong>Mark Otto: </strong>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                </div>
-            </li>
-        </ul>-->
     </div>
 </li>
 </div>
