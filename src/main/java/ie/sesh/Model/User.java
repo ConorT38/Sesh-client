@@ -90,5 +90,29 @@ public class User {
     public void setRating(float rating) {
         this.rating = rating;
     }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getLocal_spot() {
+        return local_spot;
+    }
+
+    public void setLocal_spot(int local_spot) {
+        this.local_spot = local_spot;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }
 

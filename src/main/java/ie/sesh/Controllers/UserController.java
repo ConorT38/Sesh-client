@@ -2,11 +2,15 @@ package ie.sesh.Controllers;
 
 import ie.sesh.Http.HttpHandler;
 import ie.sesh.Utils.CookieUtils;
+import ie.sesh.Utils.UserUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,6 +27,9 @@ public class UserController {
     @Autowired
     CookieUtils cookieUtils;
 
+    @Autowired
+    UserUtils userUtils;
+
     @RequestMapping("/profile")
     public ModelAndView getProfile(@CookieValue(name=SESH_COOKIE_NAME, defaultValue = "") String cookie,
                                  @CookieValue(name="ul", defaultValue = "") String userId) throws Exception{
@@ -30,5 +37,12 @@ public class UserController {
             cookie = "";
         }
         return cookieUtils.loggedInRedirect(cookie,userId,"Profile/profile");
+    }
+
+    @GetMapping("/get/recommended/users")
+    public ModelAndView getRecommendedUsers(@CookieValue(name="ul", defaultValue = "") String userId,
+                                            Model model) throws Exception{
+        model.addAttribute("recommendedUsers",userUtils.getAllUsers(http.load(Integer.parseInt(userId),"","/get/recommended/users")));
+        return new ModelAndView("fragments/recommendedContainer :: recommendedContainer");
     }
 }

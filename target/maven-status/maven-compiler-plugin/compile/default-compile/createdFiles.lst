@@ -7,6 +7,7 @@ ie\sesh\Controllers\SignupController.class
 ie\sesh\Model\Status.class
 ie\sesh\Utils\StatusUtils.class
 ie\sesh\Utils\Authentication.class
+ie\sesh\Utils\UserUtils.class
 ie\sesh\Http\Impl\HttpHandlerImpl.class
 ie\sesh\Utils\CookieUtils.class
 ie\sesh\Controllers\UserController.class

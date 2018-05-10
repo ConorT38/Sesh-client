@@ -1,137 +1,114 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-
     <title>
         Home | Sesh
     </title>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
     <link href="css/css(1)" rel="stylesheet" type="text/css">
     <link href="css/toolkit.css" rel="stylesheet">
-    
     <link href="css/application.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <style>
-      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-      /* this chunk of css is not part of the toolkit :) */
-      body {
-        width: 1px;
-        min-width: 100%;
-        *width: 100%;
-      }
-
-    </style>
-
-  </head>
-
-
+         /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+         /* this chunk of css is not part of the toolkit :) */
+         body {
+         width: 1px;
+         min-width: 100%;
+         *width: 100%;
+         }
+      </style>
+</head>
 <body class="bob" onload="loadFeed()">
 <div class="bon" id="app-growl"></div>
-
 <div th:replace="fragments/header :: header"></div>
-
 <div th:replace="fragments/modals/messagesModal :: messagesModal"></div>
-
 <div class="cd fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="bpr" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="d">
-        <h4 class="modal-title">Users</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      </div>
-
-      <div class="modal-body afx">
-        <div class="axw">
-          <ul class="bow cj ca">
-            <li class="b">
-              <div class="rv ady">
-                <img class="bos vb yb aff" src="images/avatar-fat.jpg">
-                <div class="rw">
-                  <button class="cg ns ok acx">
-                    <span class="c bps"></span> Follow
-                  </button>
-                  <strong>Jacob Thornton</strong>
-                  <p>@fat - San Francisco</p>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="d">
+                <h4 class="modal-title">Users</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body afx">
+                <div class="axw">
+                    <ul class="bow cj ca">
+                        <li class="b">
+                            <div class="rv ady">
+                                <img class="bos vb yb aff" src="images/avatar-fat.jpg">
+                                <div class="rw">
+                                    <button class="cg ns ok acx">
+                                        <span class="c bps"></span> Follow
+                                    </button>
+                                    <strong>Jacob Thornton</strong>
+                                    <p>@fat - San Francisco</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b">
+                            <div class="rv ady">
+                                <img class="bos vb yb aff" src="images/avatar-dhg.png">
+                                <div class="rw">
+                                    <button class="cg ns ok acx">
+                                        <span class="c bps"></span> Follow
+                                    </button>
+                                    <strong>Dave Gamache</strong>
+                                    <p>@dhg - Palo Alto</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b">
+                            <div class="rv ady">
+                                <img class="bos vb yb aff" src="images/avatar-mdo.png">
+                                <div class="rw">
+                                    <button class="cg ns ok acx">
+                                        <span class="c bps"></span> Follow
+                                    </button>
+                                    <strong>Mark Otto</strong>
+                                    <p>@mdo - San Francisco</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-            </li>
-            <li class="b">
-              <div class="rv ady">
-                <img class="bos vb yb aff" src="images/avatar-dhg.png">
-                <div class="rw">
-                  <button class="cg ns ok acx">
-                    <span class="c bps"></span> Follow
-                  </button>
-                  <strong>Dave Gamache</strong>
-                  <p>@dhg - Palo Alto</p>
-                </div>
-              </div>
-            </li>
-            <li class="b">
-              <div class="rv ady">
-                <img class="bos vb yb aff" src="images/avatar-mdo.png">
-                <div class="rw">
-                  <button class="cg ns ok acx">
-                    <span class="c bps"></span> Follow
-                  </button>
-                  <strong>Mark Otto</strong>
-                  <p>@mdo - San Francisco</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
-
-
 <div class="by aha ahl">
-  <div class="dp">
-    <div class="fj">
-      <div th:replace="fragments/profileContainer :: profileContainer"></div>
-
-      <div th:replace="fragments/aboutContainer :: aboutContainer"></div>
-
-      <div th:replace="fragments/photosContainer :: photosContainer"></div>
+    <div class="dp">
+        <div class="fj">
+            <div th:replace="fragments/profileContainer :: profileContainer"></div>
+            <div th:replace="fragments/aboutContainer :: aboutContainer"></div>
+            <div th:replace="fragments/photosContainer :: photosContainer"></div>
+        </div>
+        <div th:replace="fragments/live_feed :: liveFeed"></div>
+        <div class="fj">
+            <div th:replace="fragments/alerts/topRightHomeAlert :: topRightHomeAlert"></div>
+            <div th:replace="fragments/recommendedContainer :: recommendedContainer"></div>
+            <div th:replace="fragments/ads/homeSponsored :: homeSponsored"></div>
+            <div th:replace="fragments/footer :: footer"></div>
+        </div>
     </div>
-
-    <div th:replace="fragments/live_feed :: liveFeed"></div>
-    <div class="fj">
-      <div th:replace="fragments/alerts/topRightHomeAlert :: topRightHomeAlert"></div>
-
-      <div th:replace="fragments/ads/homeSponsored :: homeSponsored"></div>
-
-      <div th:replace="fragments/recommendedContainer :: recommendedContainer"></div>
-
-      <div th:replace="fragments/footer :: footer"></div>
-    </div>
-  </div>
 </div>
-
-
-    <script src="js/jquery.min.js(1)"></script>
-    <script src="js/popper.min.js(1)"></script>
-    <script src="js/chart.js"></script>
-    <script src="js/toolkit.js"></script>
-    <script src="js/application.js"></script>
-    <script src="js/time.js"></script>
-    <script src="js/status.js"></script>
-    <script>
-      // execute/clear BS loaders for docs
-      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-    </script>
-  
-
-
-</body></html>
+<script src="js/jquery.min.js(1)"></script>
+<script src="js/popper.min.js(1)"></script>
+<script src="js/chart.js"></script>
+<script src="js/toolkit.js"></script>
+<script src="js/application.js"></script>
+<script src="js/time.js"></script>
+<script src="js/status.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+         // execute/clear BS loaders for docs
+         $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+      </script>
+</body>
+</html>
