@@ -56,7 +56,7 @@ public class UserUtils {
                         user.setAge((int)  checkNullCastType(value,0));
                         break;
                     case "rating":
-                        user.setRating((float)  checkNullCastType(value,0.0));
+                        user.setRating(((Number)  checkNullCastType(value,0.0f)).floatValue());
                         break;
                     case "location":
                         user.setLocation((int)  checkNullCastType(value,0));

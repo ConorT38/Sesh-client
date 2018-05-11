@@ -2,22 +2,10 @@
     <div class="qa">
         <h6 class="afh">Recommended <small>· <a href="recommendations">View All</a></small></h6>
         <ul class="bow box">
-            <li class="rv afa">
+            <li class="rv afa"  th:each="recommendedUser: ${recommendedUsers}">
                 <img class="bos vb yb aff" src="images/avatar-fat.jpg">
                 <div class="rw">
-                    <strong>Jacob Thornton</strong> @fat
-                    <div class="bpa">
-                        <button class="cg nz ok">
-                            <i class="far fa-plus-square"></i> Follow</button>
-                    </div>
-                </div>
-            </li>
-            <li class="rv">
-                <a class="bpu" href="https://bootstrap-themes.github.io/application/index.html#">
-                    <img class="bos vb yb aff" src="images/avatar-mdo.png">
-                </a>
-                <div class="rw">
-                    <strong>Mark Otto</strong> @mdo
+                    <a style="text-decoration: none !important;" th:href="@{'/user/@' + ${recommendedUser.username}}"><strong th:inline="text">[[${recommendedUser.name}]] <small style="color:grey;" th:inline="text">@[[${recommendedUser.username}]]</small></strong></a>
                     <div class="bpa">
                         <button class="cg nz ok">
                             <i class="far fa-plus-square"></i> Follow</button>
