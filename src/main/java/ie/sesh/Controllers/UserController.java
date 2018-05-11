@@ -8,11 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CookieValue;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletResponse;
 
 import static ie.sesh.Utils.SeshConstants.SESH_COOKIE_NAME;
 
@@ -44,5 +43,14 @@ public class UserController {
                                             Model model) throws Exception{
         model.addAttribute("recommendedUsers",userUtils.getAllUsers(http.load(Integer.parseInt(userId),"","/get/recommended/users")));
         return new ModelAndView("fragments/recommendedContainer :: recommendedContainer");
+    }
+
+    @PostMapping("/follow/user")
+    @ResponseBody
+    public String followUser(@RequestBody String user_data,
+                               @CookieValue(name="ul",defaultValue = "") String id){
+        log.info("Following User: "+user_data);
+
+        return http.create(Integer.parseInt(id),user_data,"/follow/user");
     }
 }

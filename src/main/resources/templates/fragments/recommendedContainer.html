@@ -7,7 +7,7 @@
                 <div class="rw">
                     <a style="text-decoration: none !important;" th:href="@{'/user/@' + ${recommendedUser.username}}"><strong th:inline="text">[[${recommendedUser.name}]] <small style="color:grey;" th:inline="text">@[[${recommendedUser.username}]]</small></strong></a>
                     <div class="bpa">
-                        <button class="cg nz ok">
+                        <button th:onclick="'followUser(\'follow-' + ${recommendedUser.id} + '\');'" class="cg nz ok" th:id="'follow-'+${recommendedUser.id}">
                             <i class="far fa-plus-square"></i> Follow</button>
                     </div>
                 </div>

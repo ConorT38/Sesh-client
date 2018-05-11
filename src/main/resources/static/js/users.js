@@ -16,3 +16,23 @@
        }
     });
   }
+
+   function followUser(id){
+   var id = id.replace('follow-','');
+
+   var prep = {};
+   prep['user_id'] = id;
+
+   var data = JSON.stringify(prep);
+   $.ajax({
+    url:"/follow/user",
+    type:"POST",
+    data:data,
+    contentType:"application/json; charset=utf-8",
+    dataType:"json",
+    error:function(){},
+    complete:function(data){
+        loadRecommendedUsers();
+    }
+      });
+    }

@@ -44,8 +44,8 @@ public class StatusController {
 
     @PostMapping("/create/status")
     @ResponseBody
-    public String createStatus(@RequestBody String status_data, HttpServletResponse response,
-                               @CookieValue(name="ul",defaultValue = "") String id, Model model) throws Exception{
+    public String createStatus(@RequestBody String status_data,
+                               @CookieValue(name="ul",defaultValue = "") String id){
         log.info("Entered Status: "+status_data);
 
         return http.create(Integer.parseInt(id),status_data,"/create/status");
