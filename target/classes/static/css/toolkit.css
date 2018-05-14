@@ -8763,7 +8763,8 @@ img.zoom-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0; }
+  margin-top: 0;
+  word-break: break-all;}
 
 .box .boy {
   width: 100%; }

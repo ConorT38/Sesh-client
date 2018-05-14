@@ -14,3 +14,4 @@ ie\sesh\Controllers\UserController.class
 ie\sesh\Model\User.class
 ie\sesh\Http\HttpHandler.class
 ie\sesh\Controllers\CommentController.class
+ie\sesh\Controllers\SearchController.class

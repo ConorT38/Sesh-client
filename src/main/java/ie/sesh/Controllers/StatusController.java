@@ -4,6 +4,7 @@ import ie.sesh.Http.HttpHandler;
 import ie.sesh.Model.Status;
 import ie.sesh.Utils.CookieUtils;
 import ie.sesh.Utils.StatusUtils;
+import ie.sesh.Utils.UserUtils;
 import org.apache.log4j.Logger;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
 
 @Controller
 public class StatusController {
@@ -28,17 +30,23 @@ public class StatusController {
     @Autowired
     CookieUtils cookieUtils;
 
+    @Autowired
+    UserUtils userUtils;
+
     @GetMapping("/get/all/status")
     @ResponseBody
     public ModelAndView getAllStatus(@CookieValue(name="ul",defaultValue = "") String id, Model model){
             model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/status")));
+            model.addAttribute("id",Integer.parseInt(id));
             return new ModelAndView("fragments/status :: status");
     }
 
     @GetMapping("/get/all/user/status")
     @ResponseBody
     public ModelAndView getAllUserStatus(@CookieValue(name="ul",defaultValue = "") String id, Model model){
+
         model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/user/status")));
+        model.addAttribute("id",Integer.parseInt(id));
         return new ModelAndView("fragments/status :: status");
     }
 

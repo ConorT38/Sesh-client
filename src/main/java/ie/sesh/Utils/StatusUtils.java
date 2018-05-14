@@ -48,6 +48,9 @@ public class StatusUtils {
                     case "id":
                         status.setId((int)  checkNullCastType(value,0));
                         break;
+                    case "user_id":
+                        status.setUser_id((int)  checkNullCastType(value,0));
+                        break;
                     case "name":
                         status.setName((String)  checkNullCastType(value,""));
                         break;

@@ -23,9 +23,15 @@
                         <i class="fas fa-ellipsis-h" style="color: grey;"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item"href="/profile">Profile</a>
-                        <a class="dropdown-item" href="/settings">Settings</a>
-                        <a class="dropdown-item" href="Logout">Logout</a>
+                        <div th:if="${id} == ${status.user_id}">
+                        <a class="dropdown-item"href="#"><i class="far fa-edit"></i> Edit</a>
+                            <a class="dropdown-item"href="#"><i class="fas fa-minus-circle"></i> Delete</a>
+                        </div>
+                        <div th:if="${id} != ${status.user_id}">
+                            <a class="dropdown-item" href="#"><i class="far fa-times-circle"></i> Unfollow</a>
+                            <a class="dropdown-item" href="#" th:inline="text"><i class="far fa-eye-slash"></i> Hide All from @[[${status.username}]]</a>
+
+                        </div>
                     </div>
                 </div>
                 </div>
