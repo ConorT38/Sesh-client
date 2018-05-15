@@ -13,9 +13,9 @@
         <div class="bottom-align-text" style="margin-top:34px !important;">
             <hr/>
             <div class="row">
-                <div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" href="javascript:void(0)"><i id="likesBeer" onMouseOver="this.style.color='Tomato'" onMouseOut="this.style.color='grey'" style="color: grey;" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div>
-                <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#" ><i class="fas fa-comment" style="color: grey;"></i><small> Comment</small></a></div>
-                <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#"><i class="fas fa-share" style="color: grey;"></i><small> Share</small></a></div>
+                <div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" href="#/"><i id="likesBeer" onMouseOver="this.style.color='Tomato'" onMouseOut="this.style.color='grey'" style="color: grey;" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div>
+                <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/" ><i class="fas fa-comment" style="color: grey;"></i><small data-toggle="collapse" th:attr="data-target='#comments-'+${status.id}" > Comment</small></a></div>
+                <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/"><i class="fas fa-share" style="color: grey;"></i><small> Share</small></a></div>
 
                 <div class="col-3 col-sm-3">
                 <div class="dropdown show">
@@ -24,21 +24,45 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <div th:if="${id} == ${status.user_id}">
-                        <a class="dropdown-item"href="#"><i class="far fa-edit"></i> Edit</a>
-                            <a class="dropdown-item"href="#"><i class="fas fa-minus-circle"></i> Delete</a>
+                        <a class="dropdown-item"href="#/"><i class="far fa-edit"></i> Edit</a>
+                            <a class="dropdown-item"href="#/"><i class="fas fa-minus-circle"></i> Delete</a>
                         </div>
                         <div th:if="${id} != ${status.user_id}">
-                            <a class="dropdown-item" href="#"><i class="far fa-times-circle"></i> Unfollow</a>
-                            <a class="dropdown-item" href="#" th:inline="text"><i class="far fa-eye-slash"></i> Hide All from @[[${status.username}]]</a>
+                            <a class="dropdown-item" href="#/"><i class="far fa-times-circle"></i> Unfollow</a>
+                            <a class="dropdown-item" href="#/" th:inline="text"><i class="far fa-eye-slash"></i> Hide All from @[[${status.username}]]</a>
 
                         </div>
                     </div>
+
                 </div>
                 </div>
 
             </div>
         </div>
-
+        <ul class="bow afa collapse" th:id="'comments-'+${status.id}">
+            <hr/>
+            <li class="rv afh">
+                <img class="bos vb yb aff" src="images/avatar-fat.jpg">
+                <div class="rw">
+                    <strong>Jacon Thornton: </strong>
+                    Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+                </div>
+            </li>
+            <li class="rv">
+                <img class="bos vb yb aff" src="images/avatar-mdo.png">
+                <div class="rw">
+                    <strong>Mark Otto: </strong>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </div>
+            </li>
+            <br/>
+            <li class="rv">
+                <img class="bos vb yb aff" src="images/avatar-fat.jpg">
+                <div class="rw">
+                    <input type="text" th:id="'commentMessage-'+${status.id}" class="form-control" placeholder="Enter Comment: ">
+                </div>
+            </li>
+        </ul>
     </div>
 </li>
 </div>

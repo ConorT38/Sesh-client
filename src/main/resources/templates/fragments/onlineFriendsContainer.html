@@ -1,23 +1,11 @@
-<div class="pz afo d-none vy" th:fragment="onlineFriendsContainer">
+<div class="pz afo d-none vy" id="onlineFriends" th:fragment="onlineFriendsContainer">
     <div class="qa">
-        <h6 class="afh">Online Friends <small>· <a href="https://bootstrap-themes.github.io/application/index.html#">View All</a></small></h6>
+        <h6 class="afh">Online Friends <span class="dot"></span><small> <a href="https://bootstrap-themes.github.io/application/index.html#">View All</a></small></h6>
         <ul class="bow box">
-            <li class="rv afa">
+            <li class="rv" th:each="onlineUser: ${onlineUsers}">
                 <img class="bos vb yb aff" src="images/avatar-fat.jpg">
                 <div class="rw">
-                    <strong>Jacob Thornton</strong> @fat
-                    <div class="bpa">
-                        <button class="cg nz ok">
-                            <i class="fas fa-envelope"></i> Message</button>
-                    </div>
-                </div>
-            </li>
-            <li class="rv">
-                <a class="bpu" href="https://bootstrap-themes.github.io/application/index.html#">
-                    <img class="bos vb yb aff" src="images/avatar-mdo.png">
-                </a>
-                <div class="rw">
-                    <strong>Mark Otto</strong> @mdo
+                    <a style="text-decoration: none !important;" th:href="@{'/user/@' + ${onlineUser.username}}"><strong th:inline="text">[[${onlineUser.name}]] <small style="color:grey;" th:inline="text">@[[${onlineUser.username}]]</small></strong></a>
                     <div class="bpa">
                         <button class="cg nz ok">
                             <i class="fas fa-envelope"></i> Message</button>

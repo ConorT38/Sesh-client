@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+        User | Sesh
+    </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+    <link href="css/css" rel="stylesheet" type="text/css">
+    <link href="css/toolkit.css" rel="stylesheet">
+
+    <link href="css/application.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+
+</head>
+
+
+<body class="bob" onload="loadFeed()">
+
+<div class="bon" id="app-growl"></div>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div th:replace="fragments/modals/messagesModal :: messagesModal"></div>
+
+
+<div class="boq" style="background-image: url(images/iceland.jpg);">
+    <div class="by">
+        <div class="bor">
+            <div th:replace="userProfileContainer :: userProfileContainer"></div>
+        </div>
+    </div>
+
+    <nav class="bov">
+        <ul class="nav ph xm">
+            <li class="pi">
+                <a class="pg active" id="postsMarker" href="#">Posts</a>
+            </li>
+            <li class="pi">
+                <a class="pg" id="aboutMarker" href="#/about">About</a>
+            </li>
+            <li class="pi">
+                <a class="pg" id="reviewsMarker" href="#/reviews">Reviews</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div th:replace="Profile/postsContent :: postsContent"></div>
+<div th:replace="Profile/aboutContent :: aboutContent"></div>
+<div th:replace="Profile/reviewsContent :: reviewsContent"></div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/toolkit.js"></script>
+<script src="js/application.js"></script>
+<script src="js/time.js"></script>
+<script src="js/profile.js"></script>
+<script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+
+
+
+</body></html>

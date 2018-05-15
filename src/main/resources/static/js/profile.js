@@ -15,11 +15,33 @@
       for(var i=0; i<statusDates.length;i++){
       	statusDates[i].innerHTML=timeSince(new Date(statusDates[i].innerHTML));
          }
+         var stateObj = { profile: "/profile" };
+         history.replaceState(stateObj, "Sesh", "/profile/#/");
+         loadOnlineUsers();
         });
         }
        }
     });
   }
+
+    function loadOnlineUsers(){
+    $.ajax({
+    url:"/get/online/users",
+    type:"GET",
+    contentType:"application/json; charset=utf-8",
+    dataType:"json",
+    error:function(){},
+    complete:function(data){
+    if(data.responseText == null){
+          alert("you have no friends");
+      }else{
+     $('#onlineFriends').html(data.responseText).promise().done(function(){
+
+          });
+          }
+         }
+      });
+    }
 
   $("#statusBtn").click(function(){
     document.getElementById("statusLoadIcon").className="fas fa-spinner fa-spin";

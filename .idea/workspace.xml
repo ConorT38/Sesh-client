@@ -65,6 +65,7 @@
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Application.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Application.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SearchController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SearchController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" />
@@ -110,7 +111,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/App/application.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/App/application.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Login/Login.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Profile/aboutContent.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Profile/aboutContent.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Profile/postsContent.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Profile/postsContent.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Profile/reviewsContent.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Profile/reviewsContent.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Signup/Signup.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/Signup/Signup.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" />
@@ -291,30 +295,30 @@
       <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/App/application.html" afterPath="$PROJECT_DIR$/target/classes/templates/App/application.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" afterPath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/example.html" afterPath="$PROJECT_DIR$/target/classes/templates/example.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/status.html" afterPath="$PROJECT_DIR$/target/classes/templates/status.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/App/application.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/example.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/ads/homeSponsored.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/alerts/topRightHomeAlert.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/live_feed.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/modals/messagesModal.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/photosContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/profileContainer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/status.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
@@ -331,34 +335,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="53" column="52" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="52" />
+            <state relative-caret-position="119">
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="26" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reviewsContent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/reviewsContent.html">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="17">
+              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="live_feed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#li#1;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/profile.js">
+      <file leaf-file-name="SignupController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-98">
-              <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="306">
+              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="status.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/status.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profileContainer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingsController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SettingsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -420,9 +497,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpUserHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpReviewHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/account.js" />
@@ -437,7 +511,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/time.js" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
@@ -445,32 +518,36 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/modals/userSettingsModal.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/fonts/toolkit-entypo.woff2" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/onlineFriendsContainer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/likesContainer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Notifications/notifications.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/application.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/app.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/users.js" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/recommendedContainer.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/status.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/UserUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/toolkit.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/App/application.html" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SearchController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/aboutContent.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/postsContent.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/reviewsContent.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/aboutContent.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/User/userProfileContainer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/User/user.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/UserUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/onlineFriendsContainer.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/status.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/profile.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SettingsController.java" />
       </list>
     </option>
   </component>
@@ -556,6 +633,15 @@
               <item name="Sesh-client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sesh" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sesh-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sesh-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -581,6 +667,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sesh-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sesh-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Profile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -590,7 +685,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Signup" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -789,28 +884,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Login/Login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="119" column="42" lean-forward="false" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/modals/conversation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="20" column="60" lean-forward="false" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/SeshConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -920,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/onlineFriendsContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="67" lean-forward="false" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -965,14 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="48" column="47" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
@@ -1001,26 +1059,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/recommendedContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="156" lean-forward="false" selection-start-line="9" selection-start-column="156" selection-end-line="9" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Signup/Signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1768">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1051,42 +1093,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/UserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="58" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1099,34 +1109,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/toolkit.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="8766" column="2" lean-forward="false" selection-start-line="8766" selection-start-column="2" selection-end-line="8766" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="46" column="41" lean-forward="false" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1149,28 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="38" />
-          <folding>
-            <element signature="n#li#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/aboutContent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/postsContent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-145">
@@ -1179,29 +1143,162 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/userProfileContainer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="46" column="73" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/UserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/aboutContent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/onlineFriendsContainer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/reviewsContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-9">
           <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/recommendedContainer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="118" lean-forward="false" selection-start-line="9" selection-start-column="118" selection-end-line="9" selection-end-column="157" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Profile/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="53" column="52" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="52" />
+        <state relative-caret-position="-332">
+          <caret line="32" column="24" lean-forward="false" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+          <folding>
+            <element signature="n#li#1;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="31" column="61" lean-forward="false" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="62" column="25" lean-forward="false" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="99">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/profileContainer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SettingsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -53,4 +53,10 @@ public class UserController {
 
         return http.create(Integer.parseInt(id),user_data,"/follow/user");
     }
+
+    @GetMapping("/get/online/users")
+    public ModelAndView getOnlineUsers(@CookieValue(name="ul", defaultValue = "") String userId, Model model){
+        model.addAttribute("onlineUsers",userUtils.getAllUsers(http.load(Integer.parseInt(userId),"","/get/online/users")));
+        return new ModelAndView("fragments/onlineFriendsContainer :: onlineFriendsContainer");
+    }
 }
