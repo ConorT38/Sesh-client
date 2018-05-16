@@ -50,6 +50,16 @@ public class StatusController {
         return new ModelAndView("fragments/status :: status");
     }
 
+    @GetMapping("/get/all/user/status/@{username}")
+    @ResponseBody
+    public ModelAndView getAllUserProfileStatus(@CookieValue(name="ul",defaultValue = "") String id,
+                                                @PathVariable("username") String username, Model model){
+
+        model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/user/status/@"+username)));
+        model.addAttribute("id",Integer.parseInt(id));
+        return new ModelAndView("User/status :: status");
+    }
+
     @PostMapping("/create/status")
     @ResponseBody
     public String createStatus(@RequestBody String status_data,

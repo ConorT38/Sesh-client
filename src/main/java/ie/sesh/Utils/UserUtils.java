@@ -89,6 +89,68 @@ public class UserUtils {
         return users;
     }
 
+    public User getUser(String user_data){
+        log.info("User data: "+user_data);
+        user_data = filterUserResponse(user_data);
+
+        log.info("Filtered data: "+user_data);
+
+        if(user_data.equals("[]")){
+            return null;
+        }
+
+        JSONObject obj = new JSONObject(user_data);
+        log.info("Filtered array: "+obj.toString());
+        log.info("First index: "+obj.toString());
+
+            User user = new User();
+            log.info("NAMES LENGTH: "+obj.names().length());
+            for(int j = 0; j<obj.names().length(); j++){
+
+                String key = obj.names().getString(j);
+                Object value = (! obj.get(obj.names().getString(j)).toString().isEmpty() || obj.get(obj.names().getString(j))!= null ) ?  obj.get(obj.names().getString(j)) : "";
+
+                switch (key){
+                    case "id":
+                        user.setId((int)  checkNullCastType(value,0));
+                        break;
+                    case "name":
+                        user.setName((String)  checkNullCastType(value,""));
+                        break;
+                    case "age":
+                        user.setAge((int)  checkNullCastType(value,0));
+                        break;
+                    case "rating":
+                        user.setRating(((Number)  checkNullCastType(value,0.0f)).floatValue());
+                        break;
+                    case "location":
+                        user.setLocation((int)  checkNullCastType(value,0));
+                        break;
+                    case "favourite_drink":
+                        user.setFavourite_drink((String)  checkNullCastType(value,""));
+                        break;
+                    case "dob":
+                        try {
+                            Long parseDate = dateFormat.parse(checkNullCastType(value, new Timestamp(new java.util.Date().getTime())).toString()).getTime();
+                            user.setDob(new Date(parseDate));
+                        }catch (ParseException e){
+                            log.error("Couldn't parse date, something went wrong");
+                        }
+                        break;
+                    case "username":
+                        user.setUsername((String) checkNullCastType(value,""));
+                        break;
+                    case "gender":
+                        user.setGender((String) checkNullCastType(value,""));
+                        break;
+                    case "local_spot":
+                        user.setLocal_spot((int) checkNullCastType(value,0));
+                        break;
+                }
+                log.info("key = " + key + " value = " + value);
+            }
+        return user;
+    }
 
 
     public String filterUserResponse(String user_data){
@@ -106,9 +168,15 @@ public class UserUtils {
             return "false";
         }
 
-        // If the cookie is a json response
+        // If the cookie is a json array
         if(responseCheck[1].charAt(0) == '['){
             responseCheck[1] = responseCheck[1].replaceAll("\\]\\,(.*)","]");
+            log.info("Response Data: "+ responseCheck[1]);
+            return responseCheck[1];
+        }
+        // If the cookie is a json object
+       else if(responseCheck[1].charAt(0) == '{'){
+            responseCheck[1] = responseCheck[1].replaceAll("\\}\\,(.*)","}");
             log.info("Response Data: "+ responseCheck[1]);
             return responseCheck[1];
         }

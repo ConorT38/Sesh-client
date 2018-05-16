@@ -1,0 +1,34 @@
+<div id="postsContent"  class="by aha ahl" th:fragment="postsContent">
+    <div class="dp">
+        <div class="fj">
+            <div class="ca afo">
+                <a href="#" class="b rx vb xn">
+                    <span>Badges</span>
+                    <span class="badge badge-primary" style="font-size: 11px;">0</span>
+                </a>
+                <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
+                    <span>Groups</span>
+                    <span class="badge badge-primary" style="font-size: 11px;">0</span>
+                </a>
+                <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
+                    <span>Locals</span>
+                    <span class="badge badge-primary" style="font-size: 11px;">0</span>
+                </a>
+                <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
+                    <span>Mentions</span>
+                    <span class="badge badge-primary" style="font-size: 11px;">0</span>
+                </a>
+            </div>
+
+            <div th:replace="fragments/userProfileAboutContainer :: userProfileAboutContainer"></div>
+
+            <div th:replace="fragments/photosContainer :: photosContainer"></div>
+        </div>
+
+        <div th:replace="fragments/live_feed :: liveFeed"></div>
+
+        <div class="fj">
+            <div th:replace="fragments/onlineFriendsContainer :: onlineFriendsContainer"></div>
+        </div>
+    </div>
+</div>

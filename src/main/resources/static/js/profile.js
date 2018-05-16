@@ -15,8 +15,6 @@
       for(var i=0; i<statusDates.length;i++){
       	statusDates[i].innerHTML=timeSince(new Date(statusDates[i].innerHTML));
          }
-         var stateObj = { profile: "/profile" };
-         history.replaceState(stateObj, "Sesh", "/profile/#/");
          loadOnlineUsers();
         });
         }
@@ -42,6 +40,29 @@
          }
       });
     }
+
+        function loadUserProfileFeed(username){
+        $.ajax({
+        url:"/get/all/user/status/@"+username,
+        type:"GET",
+        contentType:"application/json; charset=utf-8",
+        dataType:"json",
+        error:function(){},
+        complete:function(data){
+        if(data.responseText == null){
+              alert("you have no friends");
+          }else{
+         $('#liveFeed').html(data.responseText).promise().done(function(){
+           var statusDates = document.getElementsByName("statusDate");
+
+            for(var i=0; i<statusDates.length;i++){
+            	statusDates[i].innerHTML=timeSince(new Date(statusDates[i].innerHTML));
+               }
+              });
+              }
+             }
+          });
+        }
 
   $("#statusBtn").click(function(){
     document.getElementById("statusLoadIcon").className="fas fa-spinner fa-spin";
@@ -118,6 +139,14 @@
 
           var content = $('#postsContent').html();
           $('#profileContent').replaceWith(content).promise().done();
+        });
+
+        $('.status').click(function(e) {
+            e.preventDefault();
+        });
+
+        $('.comment').click(function(e) {
+            e.preventDefault();
         });
 
 function getSeshCookie(name) {

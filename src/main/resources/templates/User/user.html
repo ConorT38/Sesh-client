@@ -8,15 +8,15 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
 
-    <title>
-        User | Sesh
+    <title th:inline="text">
+        [[${userDetails.name}]] | Sesh
     </title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-    <link href="css/css" rel="stylesheet" type="text/css">
-    <link href="css/toolkit.css" rel="stylesheet">
+    <link href="../css/css" rel="stylesheet" type="text/css">
+    <link href="../css/toolkit.css" rel="stylesheet">
 
-    <link href="css/application.css" rel="stylesheet">
+    <link href="../css/application.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <style>
@@ -32,7 +32,7 @@
 </head>
 
 
-<body class="bob" onload="loadFeed()">
+<body class="bob" th:attr="onload='loadUserProfileFeed(\''+${userDetails.username}+'\')'">
 
 <div class="bon" id="app-growl"></div>
 
@@ -41,10 +41,10 @@
 <div th:replace="fragments/modals/messagesModal :: messagesModal"></div>
 
 
-<div class="boq" style="background-image: url(images/iceland.jpg);">
+<div class="boq" style="background-image: url(../images/iceland.jpg);">
     <div class="by">
         <div class="bor">
-            <div th:replace="userProfileContainer :: userProfileContainer"></div>
+            <div th:replace="User/userProfileContainer :: userProfileContainer"></div>
         </div>
     </div>
 
@@ -63,18 +63,18 @@
     </nav>
 </div>
 
-<div th:replace="Profile/postsContent :: postsContent"></div>
-<div th:replace="Profile/aboutContent :: aboutContent"></div>
-<div th:replace="Profile/reviewsContent :: reviewsContent"></div>
+<div th:replace="User/postsContent :: postsContent"></div>
+<div th:replace="User/aboutContent :: aboutContent"></div>
+<div th:replace="User/reviewsContent :: reviewsContent"></div>
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/chart.js"></script>
-<script src="js/toolkit.js"></script>
-<script src="js/application.js"></script>
-<script src="js/time.js"></script>
-<script src="js/profile.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/chart.js"></script>
+<script src="../js/toolkit.js"></script>
+<script src="../js/application.js"></script>
+<script src="../js/time.js"></script>
+<script src="../js/profile.js"></script>
 <script>
       // execute/clear BS loaders for docs
       $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})

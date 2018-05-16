@@ -1,0 +1,10 @@
+<div class="pz vp vy afo" th:fragment="userProfileAboutContainer">
+    <div class="qa">
+        <h6 class="afh">About <small>· <a href="edit/profile">Edit</a></small></h6>
+        <ul class="dc axg">
+            </li><li><i class="fas fa-users"></i> Rating <a href="#"  th:text="${userDetails.rating}"></a>
+        </li><li><i class="fas fa-home"></i></span> Favourite Drink <a href="#" th:text="(${userDetails.favourite_drink}?: 'You have no favourite drink?')"></a>
+        </li><li><i class="fas fa-building"></i></span> From <a href="#" th:text="(${userDetails.location}?: 'Nowhere...')"></a>
+        </li></ul>
+    </div>
+</div>

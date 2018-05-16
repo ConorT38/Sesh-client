@@ -15,8 +15,6 @@
       for(var i=0; i<statusDates.length;i++){
       	statusDates[i].innerHTML=timeSince(new Date(statusDates[i].innerHTML));
          }
-         var stateObj = { profile: "/profile" };
-         history.replaceState(stateObj, "Sesh", "/#/");
         });
         }
        }
@@ -55,6 +53,13 @@ $("#app-growl").append('<div class="alert alert-success alert-dismissible fade s
 
 });
 
+$('.status').click(function(e) {
+    e.preventDefault();
+});
+
+$('.comment').click(function(e) {
+    e.preventDefault();
+});
 
 function getSeshCookie(name) {
   var value = "; " + document.cookie;
