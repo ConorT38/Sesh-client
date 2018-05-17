@@ -15,6 +15,7 @@ import java.util.List;
 
 @Component
 public class StatusUtils {
+
     private static final Logger log = Logger.getLogger(StatusUtils.class);
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.SSS+SSSS");
 

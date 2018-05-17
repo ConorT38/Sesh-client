@@ -1,4 +1,5 @@
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\StatusController.java
+C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\CommentUtils.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\CookieUtils.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\CommentController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\SearchController.java
@@ -6,6 +7,7 @@ C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\UserCont
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Http\HttpHandler.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\User.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\StatusUtils.java
+C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\Comment.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\LoginController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\Status.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\Authentication.java

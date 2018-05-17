@@ -14,7 +14,7 @@
                 <hr/>
                 <div class="row">
                     <div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" href="#/"><i id="likesBeer" onMouseOver="this.style.color='Tomato'" onMouseOut="this.style.color='grey'" style="color: grey;" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div>
-                    <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/" ><i class="fas fa-comment" style="color: grey;"></i><small data-toggle="collapse" th:attr="data-target='#comments-'+${status.id}" > Comment</small></a></div>
+                    <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/" th:id="'comments-'+${status.id}"><i class="fas fa-comment" style="color: grey;"></i><small data-toggle="collapse" th:attr="data-target='#comments-'+${status.id}" > Comment</small></a></div>
                     <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/"><i class="fas fa-share" style="color: grey;"></i><small class="share"> Share</small></a></div>
 
                     <div class="col-3 col-sm-3">
@@ -41,25 +41,12 @@
             </div>
             <ul class="bow afa collapse" th:id="'comments-'+${status.id}">
                 <hr/>
-                <li class="rv afh">
-                    <img class="bos vb yb aff" src="images/avatar-fat.jpg">
-                    <div class="rw">
-                        <strong>Jacon Thornton: </strong>
-                        Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
-                    </div>
-                </li>
-                <li class="rv">
-                    <img class="bos vb yb aff" src="images/avatar-mdo.png">
-                    <div class="rw">
-                        <strong>Mark Otto: </strong>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                    </div>
-                </li>
+            <div th:replace="fragments/comment :: comment"></div>
                 <br/>
                 <li class="rv">
                     <img class="bos vb yb aff" src="images/avatar-fat.jpg">
                     <div class="rw">
-                        <input type="text" th:id="'commentMessage-'+${status.id}" class="form-control" placeholder="Enter Comment: ">
+                        <input type="text" th:id="'commentMessage-'+${status.id}" name="comment" class="form-control" placeholder="Enter Comment: ">
                     </div>
                 </li>
             </ul>

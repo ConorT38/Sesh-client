@@ -2,6 +2,7 @@ package ie.sesh.Controllers;
 
 import ie.sesh.Http.HttpHandler;
 import ie.sesh.Model.Status;
+import ie.sesh.Utils.CommentUtils;
 import ie.sesh.Utils.CookieUtils;
 import ie.sesh.Utils.StatusUtils;
 import ie.sesh.Utils.UserUtils;
@@ -26,6 +27,9 @@ public class StatusController {
 
     @Autowired
     StatusUtils statusUtils;
+
+    @Autowired
+    CommentUtils commentUtils;
 
     @Autowired
     CookieUtils cookieUtils;
@@ -79,5 +83,22 @@ public class StatusController {
     @ResponseBody
     public String updateStatus(@CookieValue(name="ul",defaultValue = "") String id, Model model){
         return "";
+    }
+
+    @PostMapping("/create/comment")
+    @ResponseBody
+    public String createComment(@RequestBody String status_data,
+                               @CookieValue(name="ul",defaultValue = "") String id){
+        log.info("Entered Comment: "+status_data);
+
+        return http.create(Integer.parseInt(id),status_data,"/create/comment");
+    }
+
+    @GetMapping("/get/comments/{id}")
+    @ResponseBody
+    public ModelAndView getComments(@PathVariable("id") String id, Model model){
+        model.addAttribute("comments",commentUtils.getComments(http.load(Integer.parseInt(id),"","/get/comments/"+id)));
+        model.addAttribute("id",Integer.parseInt(id));
+        return new ModelAndView("fragments/comment :: comment");
     }
 }

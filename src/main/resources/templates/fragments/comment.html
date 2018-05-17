@@ -1,0 +1,11 @@
+<div th:fragment="comment" th:each="comment: ${comments}" >
+    <div th:id="'comment-'+${comment.status_id}">
+    <li class="rv afh">
+        <img class="bos vb yb aff" src="images/avatar-fat.jpg">
+        <div class="rw">
+            <strong th:text="${comment.name}"> </strong>
+            <p style="overflow-wrap: break-word;" th:text="${comment.message}"></p>
+        </div>
+    </li>
+    </div>
+</div>

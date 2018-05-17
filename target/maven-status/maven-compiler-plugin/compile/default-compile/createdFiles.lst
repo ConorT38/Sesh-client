@@ -12,7 +12,9 @@ ie\sesh\Http\Impl\HttpHandlerImpl.class
 ie\sesh\Utils\CookieUtils.class
 ie\sesh\Controllers\UserController.class
 ie\sesh\Controllers\SettingsController.class
+ie\sesh\Utils\CommentUtils.class
 ie\sesh\Model\User.class
 ie\sesh\Http\HttpHandler.class
 ie\sesh\Controllers\CommentController.class
 ie\sesh\Controllers\SearchController.class
+ie\sesh\Model\Comment.class

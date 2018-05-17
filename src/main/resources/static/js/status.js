@@ -57,9 +57,58 @@ $('.status').click(function(e) {
     e.preventDefault();
 });
 
-$('.comment').click(function(e) {
-    e.preventDefault();
-});
+$(document).keyup(function (e) {
+    if ($("input[name='comment']").focus() && (e.keyCode === 13)) {
+    console.log("id: "+e.target.id);
+    console.log("value: "+e.target.value);
+
+       postComment(e.target.id,e.target.value);
+       document.getElementById(e.target.id).value = "";
+    }
+ });
+
+
+function postComment(id,message){
+    var prep = {};
+    prep['user_id'] = getSeshCookie("ul");
+    prep['status_id'] = id.replace('commentMessage-','');
+    prep['likes'] = 0;
+    prep['message'] = message;
+
+    var data = JSON.stringify(prep);
+    $.ajax({
+  url:"/create/comment",
+  type:"POST",
+  data:data,
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  error:function(){},
+  complete:function(data){
+  document.getElementById("statusLoadIcon").className="fas fa-paper-plane";
+  document.getElementById("statusMsg").value="";
+    getComment('comments-'+id.replace('commentMessage-',''))
+  }
+    });
+}
+
+function getComment(id){
+    var prep = {};
+    var new_id = id.replace('comments-','');
+
+    $.ajax({
+  url:"/get/comments/"+new_id,
+  type:"GET",
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  error:function(){},
+  complete:function(data){
+   $('#comments-'+new_id).html(data.responseText).promise().done(function(){
+
+         });
+        }
+    });
+}
+
 
 function getSeshCookie(name) {
   var value = "; " + document.cookie;
