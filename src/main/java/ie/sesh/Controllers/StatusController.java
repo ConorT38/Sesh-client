@@ -40,7 +40,7 @@ public class StatusController {
     @GetMapping("/get/all/status")
     @ResponseBody
     public ModelAndView getAllStatus(@CookieValue(name="ul",defaultValue = "") String id, Model model){
-            model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/status")));
+            model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/status"),id));
             model.addAttribute("id",Integer.parseInt(id));
             return new ModelAndView("fragments/status :: status");
     }
@@ -49,7 +49,7 @@ public class StatusController {
     @ResponseBody
     public ModelAndView getAllUserStatus(@CookieValue(name="ul",defaultValue = "") String id, Model model){
 
-        model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/user/status")));
+        model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/user/status"),id));
         model.addAttribute("id",Integer.parseInt(id));
         return new ModelAndView("fragments/status :: status");
     }
@@ -59,7 +59,7 @@ public class StatusController {
     public ModelAndView getAllUserProfileStatus(@CookieValue(name="ul",defaultValue = "") String id,
                                                 @PathVariable("username") String username, Model model){
 
-        model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/user/status/@"+username)));
+        model.addAttribute("statuses",statusUtils.getAllStatuses(http.load(Integer.parseInt(id),"","/get/all/user/status/@"+username),id));
         model.addAttribute("id",Integer.parseInt(id));
         return new ModelAndView("User/status :: status");
     }
@@ -96,8 +96,9 @@ public class StatusController {
 
     @GetMapping("/get/comments/{id}")
     @ResponseBody
-    public ModelAndView getComments(@PathVariable("id") String id, Model model){
-        model.addAttribute("comments",commentUtils.getComments(http.load(Integer.parseInt(id),"","/get/comments/"+id)));
+    public ModelAndView getComments(@PathVariable("id") String id, Model model,
+                                    @CookieValue(name="ul",defaultValue = "") String cookie){
+        model.addAttribute("comments",commentUtils.getComments(http.load(Integer.parseInt(id),"","/get/comments/"+id),cookie));
         model.addAttribute("id",Integer.parseInt(id));
         return new ModelAndView("fragments/comment :: comment");
     }

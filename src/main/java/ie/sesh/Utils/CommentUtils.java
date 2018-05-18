@@ -1,10 +1,12 @@
 package ie.sesh.Utils;
 
+import ie.sesh.Http.HttpHandler;
 import ie.sesh.Model.Comment;
 
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
@@ -19,7 +21,10 @@ public class CommentUtils {
     private static final Logger log = Logger.getLogger(CommentUtils.class);
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.SSS+SSSS");
 
-    public List<Comment> getComments(String comment_data){
+    @Autowired
+    HttpHandler http;
+
+    public List<Comment> getComments(String comment_data,String cookie){
         log.info("Comment data: "+comment_data);
         comment_data = filterCommentResponse(comment_data);
 
@@ -76,7 +81,11 @@ public class CommentUtils {
                         }
                         break;
                 }
+                boolean liked = Boolean.parseBoolean((String)checkNullCastType(filterCommentResponse(http.load(Integer.parseInt(cookie),"{'comment_id':"+Integer.toString(comment.getId())+"}","/check/liked/comment")),false));
+                comment.setLiked(liked);
+
                 log.info("key = " + key + " value = " + value);
+                log.info("key = LIKED value = " + liked);
             }
             comments.add(comment);
         }

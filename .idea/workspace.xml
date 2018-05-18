@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" line="64" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" line="69" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="789e343d-44a4-4691-82ad-1438b9d50116" name="Default" comment="">
@@ -72,9 +72,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/UserController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Http/Impl/HttpHandlerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Comment.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Comment.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Model/User.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CommentUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CommentUtils.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CookieUtils.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/SeshConstants.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/SeshConstants.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" afterPath="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" />
@@ -129,6 +131,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/active_users.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/ads/homeSponsored.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/ads/homeSponsored.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/alerts/topRightHomeAlert.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/alerts/topRightHomeAlert.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/comment.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/comment.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" />
@@ -207,117 +210,117 @@
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_stacked.scss" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/_variables.scss" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/target/classes/static/fonts/font-awesome-4.7.0/scss/font-awesome.scss" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.bundle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/account.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/analytics.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/angular.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/application.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-migrate.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plupload.full.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/popper.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/popper.min.js(1)" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/scripts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/tether.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/toolkit.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/utils.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/wp-emoji-release.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animate/animate.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/tooltip.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/countdowntime/countdowntime.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.css" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.min.css" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/css/material-design-iconic-font.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterPath="$PROJECT_DIR$/target/classes/static/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Black.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BlackItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Bold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-BoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraBoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLight.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ExtraLightItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Italic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Light.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-LightItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Medium.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-MediumItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBold.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-SemiBoldItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-Thin.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="$PROJECT_DIR$/target/classes/static/fonts/poppins/Poppins-ThinItalic.ttf" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" afterPath="$PROJECT_DIR$/target/classes/static/images/Thumbs.db" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/avatar-fat.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/bg-01.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" afterPath="$PROJECT_DIR$/target/classes/static/images/icons/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_10.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_11.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_12.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_13.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_14.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_15.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_16.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_17.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_18.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_3.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_5.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_6.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_8.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/instagram_9.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/unsplash_1.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" afterPath="$PROJECT_DIR$/target/classes/static/images/unsplash_2.jpg" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.bundle.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/Chart.bundle.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/Chart.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/Chart.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/account.js" afterPath="$PROJECT_DIR$/target/classes/static/js/account.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/analytics.js" afterPath="$PROJECT_DIR$/target/classes/static/js/analytics.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/angular.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/angular.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/application.js" afterPath="$PROJECT_DIR$/target/classes/static/js/application.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/chart.js" afterPath="$PROJECT_DIR$/target/classes/static/js/chart.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-migrate.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js(1)" afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.min.js(1)" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/js" afterPath="$PROJECT_DIR$/target/classes/static/js/js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/plupload.full.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/plupload.full.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/popper.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/popper.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/popper.min.js(1)" afterPath="$PROJECT_DIR$/target/classes/static/js/popper.min.js(1)" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/scripts.js" afterPath="$PROJECT_DIR$/target/classes/static/js/scripts.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/tether.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tether.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/toolkit.js" afterPath="$PROJECT_DIR$/target/classes/static/js/toolkit.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/utils.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/utils.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/wp-emoji-release.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/wp-emoji-release.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animate/animate.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animate/animate.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/css/animsition.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/animsition/js/animsition.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/css/bootstrap.min.css.map" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/popper.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/tooltip.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/bootstrap/js/tooltip.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/countdowntime/countdowntime.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/countdowntime/countdowntime.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/css-hamburgers/hamburgers.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/daterangepicker.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/daterangepicker/moment.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/jquery/jquery-3.2.1.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/perfect-scrollbar/perfect-scrollbar.min.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.css" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" afterPath="$PROJECT_DIR$/target/classes/static/vendor/select2/select2.min.js" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/App/application.html" afterPath="$PROJECT_DIR$/target/classes/templates/App/application.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" afterPath="$PROJECT_DIR$/target/classes/templates/Login/Login.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" afterPath="$PROJECT_DIR$/target/classes/templates/Notifications/notifications.html" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Signup/Signup.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/example.html" afterPath="$PROJECT_DIR$/target/classes/templates/example.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/aboutContainer.html" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/active_users.html" />
@@ -348,10 +351,11 @@
       <file leaf-file-name="status.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/status.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="65" />
+            <state relative-caret-position="255">
+              <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#small#0;n#h6#0;n#a#0;n#div#0;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -369,26 +373,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="status.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="status.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="1411">
               <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
               <folding>
                 <element signature="e#0#3165#0" expanded="false" />
-                <element signature="e#0#3165#0" expanded="false" />
-                <element signature="e#0#3165#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="live_feed.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -396,7 +388,7 @@
       <file leaf-file-name="application.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/App/application.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="578">
               <caret line="85" column="20" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
               <folding>
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -405,13 +397,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StatusUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="172">
+              <caret line="75" column="50" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
               <folding>
-                <element signature="method#getAllStatuses#0;class#StatusUtils#0" expanded="false" />
+                <element signature="e#1241#1249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -420,10 +412,11 @@
       <file leaf-file-name="CommentUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CommentUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="-459">
+              <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
-                <element signature="e#1103#1112#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1251#1260#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -432,9 +425,27 @@
       <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="14" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="498">
+              <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+              <folding>
+                <element signature="e#1783#1784#0" expanded="true" />
+                <element signature="e#1826#1827#0" expanded="true" />
+                <element signature="e#1860#1861#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Status.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+              <folding>
+                <element signature="e#1976#1977#0" expanded="true" />
+                <element signature="e#2019#2020#0" expanded="true" />
+                <element signature="e#2053#2054#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -442,9 +453,10 @@
       <file leaf-file-name="status.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/status.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <state relative-caret-position="272">
+              <caret line="16" column="151" lean-forward="false" selection-start-line="16" selection-start-column="151" selection-end-line="16" selection-end-column="151" />
               <folding>
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -454,8 +466,8 @@
       <file leaf-file-name="StatusController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="96" column="30" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
+            <state relative-caret-position="331">
+              <caret line="100" column="51" lean-forward="false" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -532,7 +544,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/SignupController.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Http/HttpHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/aboutContainer.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/time.js" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" />
@@ -571,14 +582,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/live_feed_photos_examples.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/live_feed.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/user.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/comment.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java" />
         <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CommentUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/User/status.html" />
-        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/comment.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/status.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/status.js" />
+        <option value="$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java" />
       </list>
     </option>
   </component>
@@ -622,9 +634,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -768,6 +778,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -908,13 +920,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.50323623" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1512945" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947975" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947975" sideWeight="0.49676377" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2289644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23300971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -927,6 +938,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,13 +977,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/fonts/toolkit-entypo.woff2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="2482" column="0" lean-forward="false" selection-start-line="2482" selection-start-column="0" selection-end-line="2482" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/Authentication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1026,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,14 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1768">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1068,7 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-145">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1078,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,7 +1085,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,7 +1134,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,11 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-          <folding>
-            <element signature="n#li#0;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#div#0;n#ul#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-128">
           <caret line="0" column="62" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,23 +1208,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
           <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/status.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/status.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
           <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,7 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
           <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,11 +1230,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="80" column="5" lean-forward="false" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding>
-            <element signature="n#li#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1270,9 +1237,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="64" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,9 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1314,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,49 +1286,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="method#getAllStatuses#0;class#StatusUtils#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CommentUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#1103#1112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="14" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/App/application.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="578">
           <caret line="85" column="20" lean-forward="false" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
           <folding>
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="96" column="30" lean-forward="false" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,34 +1306,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#3165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_51/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="120" column="26" lean-forward="false" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+          <folding>
+            <element signature="e#3553#3554#0" expanded="false" />
+            <element signature="e#3619#3620#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="88" column="30" lean-forward="false" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+          <folding>
+            <element signature="e#1783#1784#0" expanded="true" />
+            <element signature="e#1826#1827#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Model/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+          <folding>
+            <element signature="e#1976#1977#0" expanded="true" />
+            <element signature="e#2019#2020#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/User/status.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="65" />
+        <state relative-caret-position="255">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#small#0;n#h6#0;n#a#0;n#div#0;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/status.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="16" column="151" lean-forward="false" selection-start-line="16" selection-start-column="151" selection-end-line="16" selection-end-column="151" />
           <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#li#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/status.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Controllers/StatusController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="83" column="18" lean-forward="false" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+        <state relative-caret-position="331">
+          <caret line="100" column="51" lean-forward="false" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/CommentUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
-            <element signature="e#0#3165#0" expanded="false" />
-            <element signature="e#0#3165#0" expanded="false" />
-            <element signature="e#0#3165#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1251#1260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ie/sesh/Utils/StatusUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="75" column="50" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="50" />
+          <folding>
+            <element signature="e#1241#1249#0" expanded="true" />
           </folding>
         </state>
       </provider>

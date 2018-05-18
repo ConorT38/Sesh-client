@@ -12,12 +12,13 @@ public class Comment {
     private String username;
     private String name;
     private int likes;
+    private boolean liked;
     private Timestamp date;
 
     public Comment() {
     }
 
-    public Comment(int id, int status_id, int user_id, String message, String username, String name, int likes, Timestamp date) {
+    public Comment(int id, int status_id, int user_id, String message, String username, String name, int likes, boolean liked, Timestamp date) {
         this.id = id;
         this.status_id = status_id;
         this.user_id = user_id;
@@ -25,6 +26,7 @@ public class Comment {
         this.username = username;
         this.name = name;
         this.likes = likes;
+        this.liked = liked;
         this.date = date;
     }
 
@@ -82,6 +84,14 @@ public class Comment {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public boolean isLiked() {
+        return liked;
+    }
+
+    public void setLiked(boolean liked) {
+        this.liked = liked;
     }
 
     public Timestamp getDate() {

@@ -12,6 +12,7 @@ public class Status {
     private String message;
     private int location;
     private int likes;
+    private boolean liked;
 
     private Timestamp date;
 
@@ -22,13 +23,14 @@ public class Status {
 
     public Status() {}
 
-    public Status(int user_id, String name, String username, String message, int location, int likes, Timestamp date, String going,String maybe, String not_going) {
+    public Status(int user_id, String name, String username, String message, int location, int likes, boolean liked, Timestamp date, String going,String maybe, String not_going) {
         this.user_id = user_id;
         this.name = name;
         this.username = username;
         this.message = message;
         this.location = location;
         this.likes = likes;
+        this.liked = liked;
         this.date = date;
         this.going = going;
         this.maybe = maybe;
@@ -89,6 +91,14 @@ public class Status {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public boolean isLiked() {
+        return liked;
+    }
+
+    public void setLiked(boolean liked) {
+        this.liked = liked;
     }
 
     public Timestamp getDate() {

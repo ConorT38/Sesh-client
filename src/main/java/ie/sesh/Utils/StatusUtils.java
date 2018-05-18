@@ -1,10 +1,12 @@
 package ie.sesh.Utils;
 
+import ie.sesh.Http.HttpHandler;
 import ie.sesh.Model.Status;
 
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
@@ -19,7 +21,10 @@ public class StatusUtils {
     private static final Logger log = Logger.getLogger(StatusUtils.class);
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss.SSS+SSSS");
 
-    public List<Status> getAllStatuses(String status_data){
+    @Autowired
+    HttpHandler http;
+
+    public List<Status> getAllStatuses(String status_data, String cookie){
         log.info("Status data: "+status_data);
         status_data = filterStatusResponse(status_data);
 
@@ -67,6 +72,9 @@ public class StatusUtils {
                     case "likes":
                         status.setLikes((int)value);
                         break;
+                    case "liked":
+                        status.setLiked((boolean) checkNullCastType(value,false));
+                        break;
                     case "date":
                         try {
                             Long parseDate = dateFormat.parse(checkNullCastType(value, new Timestamp(new java.util.Date().getTime())).toString()).getTime();
@@ -87,6 +95,7 @@ public class StatusUtils {
                 }
                 log.info("key = " + key + " value = " + value);
             }
+
             statuses.add(status);
         }
         return statuses;

@@ -13,7 +13,10 @@
             <div class="bottom-align-text" style="margin-top:34px !important;">
                 <hr/>
                 <div class="row">
-                    <div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" href="#/"><i id="likesBeer" onMouseOver="this.style.color='Tomato'" onMouseOut="this.style.color='grey'" style="color: grey;" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div>
+                    <div th:switch="${status.liked}">
+                        <div th:case="false"><div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" th:onclick="'getLike(\'comments-'+${status.id}+'\')'" href="#/"><i id="likesBeer" onMouseOver="this.style.color='Tomato'" onMouseOut="this.style.color='grey'" style="color: grey;" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div></div>
+                        <div th:case="true"><div class="col-3 col-sm-3"><a th:id="'like-' + ${status.id}" th:onclick="'getLike(\'comments-'+${status.id}+'\')'" href="#/"><i id="likesBeer" onMouseOver="this.style.color='grey'" onMouseOut="this.style.color='Tomato'" style="color: Tomato;" class="fas fa-beer" th:inline="text"> [[${status.likes}]]</i></a></div></div>
+                    </div>
                     <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/" th:id="'comments-'+${status.id}"><i class="fas fa-comment" style="color: grey;"></i><small data-toggle="collapse" th:attr="data-target='#comments-'+${status.id}" > Comment</small></a></div>
                     <div class="col-3 col-sm-3"><a style="text-decoration: none !important;" href="#/"><i class="fas fa-share" style="color: grey;"></i><small class="share"> Share</small></a></div>
 
