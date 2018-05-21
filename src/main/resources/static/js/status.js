@@ -109,7 +109,47 @@ function getComment(id){
     });
 }
 
+function getLike(id){
+    var prep = {};
+    prep['user_id'] = getSeshCookie("ul");
+    prep['status_id'] = id.replace('comments-','');
 
+    var data = JSON.stringify(prep);
+    $.ajax({
+  url:"/like/status",
+  type:"POST",
+  data:data,
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  error:function(){},
+  complete:function(data){
+  document.getElementById(id).style.color="Tomato";
+  document.getElementById(id).onmouseover="this.style.color='grey'";
+     document.getElementById(id).onmouseout="this.style.color='Tomato'";
+  }
+    });
+}
+
+function getUnlike(id){
+    var prep = {};
+    prep['user_id'] = getSeshCookie("ul");
+    prep['status_id'] = id.replace('comments-','');
+
+    var data = JSON.stringify(prep);
+    $.ajax({
+  url:"/unlike/status",
+  type:"POST",
+  data:data,
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  error:function(){},
+  complete:function(data){
+   document.getElementById(id).style.color="grey";
+   document.getElementById(id).onmouseover="this.style.color='Tomato'";
+   document.getElementById(id).onmouseout="this.style.color='grey'";
+  }
+    });
+}
 function getSeshCookie(name) {
   var value = "; " + document.cookie;
   var parts = value.split("; " + name + "=");

@@ -85,13 +85,31 @@ public class StatusController {
         return "";
     }
 
+    @PostMapping("/like/status")
+    @ResponseBody
+    public String likeStatus(@RequestBody String status_data,
+                                @CookieValue(name="ul",defaultValue = "") String id){
+        log.info("Status data (like): "+status_data);
+
+        return http.create(Integer.parseInt(id),status_data,"/like/status");
+    }
+
+    @PostMapping("/unlike/status")
+    @ResponseBody
+    public String unlikeStatus(@RequestBody String status_data,
+                             @CookieValue(name="ul",defaultValue = "") String id){
+        log.info("Status data (like): "+status_data);
+
+        return http.create(Integer.parseInt(id),status_data,"/like/status");
+    }
+
     @PostMapping("/create/comment")
     @ResponseBody
     public String createComment(@RequestBody String status_data,
                                @CookieValue(name="ul",defaultValue = "") String id){
-        log.info("Entered Comment: "+status_data);
+        log.info("Status data (unlike): "+status_data);
 
-        return http.create(Integer.parseInt(id),status_data,"/create/comment");
+        return http.create(Integer.parseInt(id),status_data,"/unlike/status");
     }
 
     @GetMapping("/get/comments/{id}")
