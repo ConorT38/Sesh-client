@@ -84,8 +84,6 @@ function postComment(id,message){
   dataType:"json",
   error:function(){},
   complete:function(data){
-  document.getElementById("statusLoadIcon").className="fas fa-paper-plane";
-  document.getElementById("statusMsg").value="";
     getComment('comments-'+id.replace('commentMessage-',''))
   }
     });
@@ -125,7 +123,8 @@ function getLike(id){
   complete:function(data){
   document.getElementById(id).style.color="Tomato";
   document.getElementById(id).onmouseover="this.style.color='grey'";
-     document.getElementById(id).onmouseout="this.style.color='Tomato'";
+  document.getElementById(id).onmouseout="this.style.color='Tomato'";
+  document.getElementById(id).setAttribute('onclick','getUnlike(\''+id+'\')');
   }
     });
 }
@@ -134,7 +133,7 @@ function getUnlike(id){
     var prep = {};
     prep['user_id'] = getSeshCookie("ul");
     prep['status_id'] = id.replace('comments-','');
-
+    console.log("comment id = "+id);
     var data = JSON.stringify(prep);
     $.ajax({
   url:"/unlike/status",
@@ -147,6 +146,7 @@ function getUnlike(id){
    document.getElementById(id).style.color="grey";
    document.getElementById(id).onmouseover="this.style.color='Tomato'";
    document.getElementById(id).onmouseout="this.style.color='grey'";
+   document.getElementById(id).setAttribute('onclick','getUnlike(\''+id+'\')');
   }
     });
 }

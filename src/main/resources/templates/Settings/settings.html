@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Settings | Sesh</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+    <link href="css" rel="stylesheet" type="text/css">
+    <link href="css/toolkit.css" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <style>
+         /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+         /* this chunk of css is not part of the toolkit :) */
+         body {
+         width: 1px;
+         min-width: 100%;
+         *width: 100%;
+         }
+      </style>
+</head>
+<body class="bob" onload="loadNotificationFeed()">
+<div class="bon" id="app-growl"></div>
+<div th:replace="fragments/header :: header"></div>
+<div th:replace="fragments/modals/messagesModal :: messagesModal"></div>
+<div class="by aha ahl">
+
+    <div class="dp">
+        <div class="fj">
+            <div class="ca afo">
+                <a href="#" class="b rx vb xn">
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="b rx vb xn">
+                    <span>Account</span>
+                </a>
+                <a href="#" class="b rx vb xn">
+                    <span>General</span>
+                </a>
+                <a href="#" class="b rx vb xn">
+                    <span>Security</span>
+                </a>
+                <a href="#" class="b rx vb xn">
+                    <span>Privacy</span>
+                </a>
+                <a href="#" class="b rx vb xn">
+                    <span>Emails</span>
+                </a>
+                <a href="#" class="b rx vb xn">
+                    <span>Billing</span>
+                </a>
+            </div>
+        </div>
+        <div class="fm">
+            <ul class="ca bow box afa">
+                <li class="b agz">
+                    <h4 class="aeh">Settings</h4>
+                </li>
+                <div  id="settingsBox">
+                    <div th:replace="Settings/settings_box  :: settings_box"></div>
+                </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/toolkit.js"></script>
+<script src="js/application.js"></script>
+<script src="js/notification.js"></script>
+<script>
+         // execute/clear BS loaders for docs
+         $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+      </script>
+</body>
+</html>

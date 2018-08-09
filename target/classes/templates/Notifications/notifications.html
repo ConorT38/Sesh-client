@@ -1,288 +1,122 @@
-                    <!DOCTYPE html>
-                    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                        <meta name="viewport" content="width=device-width, initial-scale=1">
-                        <meta name="description" content="">
-                        <meta name="keywords" content="">
-                        <meta name="author" content="">
-
-                        <title>Notifications | Sesh</title>
-                        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-
-                        <link href="css" rel="stylesheet" type="text/css">
-                        <link href="css/toolkit.css" rel="stylesheet">
-
-                        <link href="css/application.css" rel="stylesheet">
-                      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-                        <style>
-                          /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-                          /* this chunk of css is not part of the toolkit :) */
-                          body {
-                            width: 1px;
-                            min-width: 100%;
-                            *width: 100%;
-                          }
-                        </style>
-
-                      </head>
-
-
-                    <body class="bob">
-
-
-
-                    <div class="bon" id="app-growl"></div>
-
-                    <div th:replace="fragments/header :: header"></div>
-
-                    <div th:replace="fragments/modals/messagesModal :: messagesModal"></div>
-
-
-                    <div class="by aha ahl">
-                      <div class="dp">
-                        <div class="fj">
-
-                          <div class="ca afo">
-                            <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
-                              <span>Notifications</span>
-                              <span class="h aye"></span>
-                            </a>
-                            <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
-                              <span>Mentions</span>
-                              <span class="h aye"></span>
-                            </a>
-                          </div>
-
-                           <div class="pz d-none vy afo">
-                            <div class="qa">
-                              <h6 class="afh">Photos <small>· <a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Edit</a></small></h6>
-                              <div data-grid="images" data-target-height="150"><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
-                                  <img data-width="640" data-height="640" data-action="zoom" src="instagram_5.jpg" style="width: 114px; height: 115px;">
-                                </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
-                                  <img data-width="640" data-height="640" data-action="zoom" src="instagram_6.jpg" style="width: 114px; height: 115px;">
-                                </div><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
-                                  <img data-width="640" data-height="640" data-action="zoom" src="instagram_7.jpg" style="width: 114px; height: 115px;">
-                                </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
-                                  <img data-width="640" data-height="640" data-action="zoom" src="instagram_8.jpg" style="width: 114px; height: 115px;">
-                                </div><div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
-                                  <img data-width="640" data-height="640" data-action="zoom" src="instagram_9.jpg" style="width: 114px; height: 115px;">
-                                </div><div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
-                                  <img data-width="640" data-height="640" data-action="zoom" src="instagram_10.jpg" style="width: 114px; height: 115px;">
-                                </div></div>
-                            </div>
-                          </div>
-
-                          <div class="pz d-none vy">
-                            <div class="qa">
-                              <h6 class="afh">Trending Searches <small>· <a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Change</a></small></h6>
-                              <ul class="dc axg">
-                                <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#Bootstrap</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Mdo for pres</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#fatsux</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#buyme</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#designishard</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#helpawesomepeople</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#doawesomestuff</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Tom Brady</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Magna Carta</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Mark Otto</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Dave Gamache</a>
-                                </li><li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Jacob Thornton</a>
-                              </li></ul>
-                            </div>
-                          </div>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="">
+      <title>Notifications | Sesh</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+      <link href="css" rel="stylesheet" type="text/css">
+      <link href="css/toolkit.css" rel="stylesheet">
+      <link href="css/application.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <style>
+         /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+         /* this chunk of css is not part of the toolkit :) */
+         body {
+         width: 1px;
+         min-width: 100%;
+         *width: 100%;
+         }
+      </style>
+   </head>
+   <body class="bob" onload="loadNotificationFeed()">
+      <div class="bon" id="app-growl"></div>
+      <div th:replace="fragments/header :: header"></div>
+      <div th:replace="fragments/modals/messagesModal :: messagesModal"></div>
+      <div class="by aha ahl">
+         <div class="dp">
+            <div class="fj">
+               <div class="ca afo">
+                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
+                  <span>Notifications</span>
+                  <span class="h aye"></span>
+                  </a>
+                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#" class="b rx vb xn">
+                  <span>Mentions</span>
+                  <span class="h aye"></span>
+                  </a>
+               </div>
+               <div class="pz d-none vy afo">
+                  <div class="qa">
+                     <h6 class="afh">Photos <small>· <a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Edit</a></small></h6>
+                     <div data-grid="images" data-target-height="150">
+                        <div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+                           <img data-width="640" data-height="640" data-action="zoom" src="instagram_5.jpg" style="width: 114px; height: 115px;">
                         </div>
-
-                        <div class="fm">
-                          <ul class="ca bow box afa">
-                            <li class="b agz">
-                              <h4 class="aeh">Notifications</h4>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bfb axc aey"></span>
-
-                              <div class="rw">
-                              <small class="axc acx">1 min</small>
-                                <div class="bpb">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Dave Gamache</strong></a> went traveling
-                                </div>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bex axc aey"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">3 min</small>
-                                <div class="bpb">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Mark Otto</strong></a> played destiny
-                                </div>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bnb axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">34 min</small>
-                                <div class="bpb afa">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Fat</strong></a> and <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>1 other</strong></a> followed you
-                                </div>
-                                <ul class="bol">
-                                  <li class="bom"><img class="us" src="images/avatar-fat.jpg">
-                                  </li><li class="bom"><img class="us" src="images/avatar-dhg.png">
-                                </li></ul>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bao axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">3 min</small>
-                                <div class="bpb">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Dave Gamache</strong></a> uploaded a photo
-                                </div>
-
-                                <div class="boy" data-grid="images"><img style="display: inline-block; width: 519px; height: 503px; margin-bottom: 10px; margin-right: 0px; vertical-align: bottom;" data-width="640" data-height="640" data-action="zoom" src="instagram_3.jpg"></div>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bed axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">3 min</small>
-                                <div class="bpb">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Mark Otto</strong></a> flagged your post
-                                </div>
-
-                                <div class="pz aew">
-                                  <div class="qa">
-                                    <div class="rv">
-                                      <img class="bos us aff yb" src="images/avatar-fat.jpg">
-                                      <div class="rw">
-                                        <div class="bpd">
-                                          <div class="bpb">
-                                            <small class="acx axc">1 hr</small>
-                                            <h6>Jacob Thornton</h6>
-                                          </div>
-                                          Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bfn axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">4 hr</small>
-                                <div class="bpb afa">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Mark Otto</strong></a> and <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>2 others</strong></a> favorited your post
-                                </div>
-                                <ul class="bol">
-                                  <li class="bom"><img class="us" src="images/avatar-dhg.png">
-                                  </li><li class="bom"><img class="us" src="images/avatar-mdo.png">
-                                  </li><li class="bom"><img class="us" src="images/avatar-fat.jpg">
-                                </li></ul>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bnb axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">30 min</small>
-                                <div class="bpb">
-                                  You followed <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Jacob Thornton</strong></a> and <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>1 other</strong></a>
-                                </div>
-
-                                <div class="aew">
-                                  <div class="dp">
-                                    <div class="fm">
-                                      <div class="pz bpi afa">
-                                        <div class="qf" style="background-image: url(../images/instagram_4.jpg);"></div>
-                                        <div class="qa avz">
-                                          <img class="bpj" src="images/avatar-fat.jpg">
-                                          <h5 class="qb">Jacob Thornton</h5>
-                                          <p class="afo">Big belly rude boy, million dollar hustler. Unemployed.</p>
-                                          <button class="cg nz ok">
-                                            <span class="h ayi"></span> Follow
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="fm">
-                                      <div class="pz bpi afa">
-                                        <div class="qf" style="background-image: url(../images/instagram_1.jpg);"></div>
-                                        <div class="qa avz">
-                                          <img class="bpj" src="images/avatar-mdo.png">
-                                          <h5 class="qb">Mark Otto</h5>
-                                          <p class="afo">GitHub and Bootstrap. Formerly at Twitter. Huge nerd.</p>
-                                          <button class="cg nz ok">
-                                            <span class="h ayi"></span> Follow
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bbr axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">30 min</small>
-                                <div class="bpb afa">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Jacob Thornton</strong></a> and <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>1 other</strong></a> updated their settings
-                                </div>
-                                <ul class="bol">
-                                  <li class="bom"><img class="us" src="images/avatar-fat.jpg">
-                                  </li><li class="bom"><img class="us" src="images/avatar-dhg.png">
-                                </li></ul>
-                              </div>
-                            </li>
-
-                            <li class="b rv agz">
-                              <span class="h bci axc aey yb"></span>
-
-                              <div class="rw">
-                                <small class="acx axc">1 min</small>
-                                <div class="bpb">
-                                  <a href="https://bootstrap-themes.github.io/application/notifications/index.html#"><strong>Jacob Thornton</strong></a> quit his job
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
+                        <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+                           <img data-width="640" data-height="640" data-action="zoom" src="instagram_6.jpg" style="width: 114px; height: 115px;">
                         </div>
-                        <div class="fj">
-
-                          <div th:replace="fragments/active_users :: active_users"></div>
-
-
-                            <div th:replace="fragments/footer :: footer"></div>
+                        <div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+                           <img data-width="640" data-height="640" data-action="zoom" src="instagram_7.jpg" style="width: 114px; height: 115px;">
                         </div>
-                      </div>
-                    </div>
-
-
-                        <script src="js/jquery.min.js"></script>
-                        <script src="js/popper.min.js"></script>
-                        <script src="js/chart.js"></script>
-                        <script src="js/toolkit.js"></script>
-                        <script src="js/application.js"></script>
-                        <script>
-                          // execute/clear BS loaders for docs
-                          $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-                        </script>
-
-                    </body></html>
+                        <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+                           <img data-width="640" data-height="640" data-action="zoom" src="instagram_8.jpg" style="width: 114px; height: 115px;">
+                        </div>
+                        <div style="margin-bottom: 10px; margin-right: 10px; display: inline-block; vertical-align: bottom;">
+                           <img data-width="640" data-height="640" data-action="zoom" src="instagram_9.jpg" style="width: 114px; height: 115px;">
+                        </div>
+                        <div style="margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;">
+                           <img data-width="640" data-height="640" data-action="zoom" src="instagram_10.jpg" style="width: 114px; height: 115px;">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pz d-none vy">
+                  <div class="qa">
+                     <h6 class="afh">Trending Searches <small>· <a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Change</a></small></h6>
+                     <ul class="dc axg">
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#Bootstrap</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Mdo for pres</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#fatsux</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#buyme</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#designishard</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#helpawesomepeople</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">#doawesomestuff</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Tom Brady</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Magna Carta</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Mark Otto</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Dave Gamache</a>
+                        </li>
+                        <li><a href="https://bootstrap-themes.github.io/application/notifications/index.html#">Jacob Thornton</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+           <div class="fm">
+             <ul class="ca bow box afa">
+             <li class="b agz">
+               <h4 class="aeh">Notifications</h4>
+                </li>
+            <div  id="notificationFeed">
+               <div th:replace="Notifications/notification  :: notification"></div>
+            </div>
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/chart.js"></script>
+      <script src="js/toolkit.js"></script>
+      <script src="js/application.js"></script>
+      <script src="js/notification.js"></script>
+      <script>
+         // execute/clear BS loaders for docs
+         $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+      </script>
+   </body>
+</html>

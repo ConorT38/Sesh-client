@@ -30,16 +30,12 @@ public class UserUtils {
         }
 
         JSONArray arr = new JSONArray(user_data);
-        JSONObject ob = new JSONObject(arr.get(0));
-        log.info("Filtered array: "+arr.toString());
-        log.info("First index: "+arr.get(0).toString());
 
         List<User> users = new ArrayList<User>();
 
         for(int i=0; i<arr.length();i++){
             User user = new User();
             JSONObject obj = new JSONObject(arr.get(i).toString());
-            log.info("NAMES LENGTH: "+obj.names().length());
             for(int j = 0; j<obj.names().length(); j++){
 
                 String key = obj.names().getString(j);
@@ -69,7 +65,7 @@ public class UserUtils {
                             Long parseDate = dateFormat.parse(checkNullCastType(value, new Timestamp(new java.util.Date().getTime())).toString()).getTime();
                             user.setDob(new Date(parseDate));
                         }catch (ParseException e){
-                            log.error("Couldn't parse date, something went wrong");
+                            log.error("Couldn't parse date, something went wrong, value: "+value.toString());
                         }
                         break;
                     case "username":
@@ -82,7 +78,6 @@ public class UserUtils {
                         user.setLocal_spot((int) checkNullCastType(value,0));
                         break;
                 }
-                log.info("key = " + key + " value = " + value);
             }
             users.add(user);
         }
@@ -100,11 +95,8 @@ public class UserUtils {
         }
 
         JSONObject obj = new JSONObject(user_data);
-        log.info("Filtered array: "+obj.toString());
-        log.info("First index: "+obj.toString());
 
             User user = new User();
-            log.info("NAMES LENGTH: "+obj.names().length());
             for(int j = 0; j<obj.names().length(); j++){
 
                 String key = obj.names().getString(j);
@@ -147,7 +139,6 @@ public class UserUtils {
                         user.setLocal_spot((int) checkNullCastType(value,0));
                         break;
                 }
-                log.info("key = " + key + " value = " + value);
             }
         return user;
     }
@@ -159,7 +150,6 @@ public class UserUtils {
             return "false";
         }
         user_data = user_data.substring(1, user_data.length()-1);
-        log.info("Filtered response: "+user_data);
 
         String[] responseCheck = user_data.split(",", 2);
         log.info("Returned with response code: "+responseCheck[0]);

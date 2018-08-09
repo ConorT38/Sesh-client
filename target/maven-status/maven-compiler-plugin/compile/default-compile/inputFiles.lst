@@ -5,8 +5,10 @@ C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\CommentC
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\SearchController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\UserController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Http\HttpHandler.java
+C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\Notification.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\User.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\StatusUtils.java
+C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\NotificationController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\Comment.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\LoginController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Model\Status.java
@@ -15,6 +17,7 @@ C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Application.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\SignupController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\SeshConstants.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\UserUtils.java
+C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Utils\NotificationUtils.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Http\Impl\HttpHandlerImpl.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\SettingsController.java
 C:\cygwin64\home\cthompso\Sesh-client\src\main\java\ie\sesh\Controllers\UserReviewController.java

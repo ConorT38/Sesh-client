@@ -36,15 +36,13 @@ public class StatusUtils {
 
         JSONArray arr = new JSONArray(status_data);
         JSONObject ob = new JSONObject(arr.get(0));
-        log.info("Filtered array: "+arr.toString());
-        log.info("First index: "+arr.get(0).toString());
 
         List<Status> statuses = new ArrayList<Status>();
 
         for(int i=0; i<arr.length();i++){
             Status status = new Status();
             JSONObject obj = new JSONObject(arr.get(i).toString());
-           log.info("NAMES LENGTH: "+obj.names().length());
+
             for(int j = 0; j<obj.names().length(); j++){
 
                 String key = obj.names().getString(j);
@@ -93,7 +91,6 @@ public class StatusUtils {
                         status.setNot_going((String) checkNullCastType(value,""));
                         break;
                 }
-                log.info("key = " + key + " value = " + value);
             }
 
             statuses.add(status);
@@ -109,7 +106,6 @@ public class StatusUtils {
             return "false";
         }
         status_data = status_data.substring(1, status_data.length()-1);
-        log.info("Filtered response: "+status_data);
 
         String[] responseCheck = status_data.split(",", 2);
         log.info("Returned with response code: "+responseCheck[0]);
