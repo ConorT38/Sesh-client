@@ -3,7 +3,7 @@
         <h6 class="afh">Online Friends <span class="dot"></span><small> <a href="https://bootstrap-themes.github.io/application/index.html#">View All</a></small></h6>
         <ul class="bow box">
             <li class="rv" th:each="onlineUser: ${onlineUsers}">
-                <img class="bos vb yb aff" src="images/avatar-fat.jpg">
+                <img class="bos vb yb aff" th:src="${onlineUser.profile_pic}">
                 <div class="rw">
                     <a style="text-decoration: none !important;" th:href="@{'/user/@' + ${onlineUser.username}}"><strong th:inline="text">[[${onlineUser.name}]] <small style="color:grey;" th:inline="text">@[[${onlineUser.username}]]</small></strong></a>
                     <div class="bpa">

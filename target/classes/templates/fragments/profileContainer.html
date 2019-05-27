@@ -1,15 +1,16 @@
 <div class="pz bpi afo" th:fragment="profileContainer">
     <div class="qf" style="background-image: url(images/iceland.jpg);"></div>
     <div class="qa avz">
-        <a href="/profile">
-            <img class="bpj" src="images/avatar-fat.jpg">
+        <a href="#changeProfilePicModal" data-toggle="modal">
+            <img class="bpj" th:src="${user.profile_pic}">
         </a>
+    </div>
 
         <h6 class="qb">
             <a class="boa" href="/profile" th:text="${user.name}">You have no name?</a>
         </h6>
 
-        <p class="afo">I wish i was a little bit taller, wish i was a baller, wish i had a girl…&nbsp;also.</p>
+        <p class="afo">This user has no bio.</p>
 
         <ul class="bpk">
             <li class="bpl">
@@ -27,5 +28,9 @@
             </li>
 
         </ul>
+    <div>
+    <div th:replace="fragments/modals/changeProfilePicModal :: changeProfilePicModal"></div>
     </div>
-</div>
+    </div>
+
+

@@ -19,10 +19,11 @@ public class User {
     private String gender;
     private int local_spot;
     private String username;
+    private String profile_pic;
 
     public User(){}
 
-    public User(int id, String name, int age, Date dob, int location, String favourite_drink, float rating, String gender, int local_spot, String username, String email, String password) {
+    public User(int id, String name, int age, Date dob, int location, String favourite_drink, float rating, String gender, int local_spot, String username, String email, String password, String profile_pic) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -33,6 +34,7 @@ public class User {
         this.gender = gender;
         this.local_spot = local_spot;
         this.username = username;
+        this.profile_pic = profile_pic;
     }
 
     public int getId() {
@@ -113,6 +115,14 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getProfile_pic() {
+        return profile_pic;
+    }
+
+    public void setProfile_pic(String profile_pic) {
+        this.profile_pic = profile_pic;
     }
 }
 

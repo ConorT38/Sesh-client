@@ -2,14 +2,14 @@
     <div class="qf" style="background-image: url(../images/iceland.jpg) !important;"></div>
     <div class="qa avz">
         <a href="https://bootstrap-themes.github.io/application/profile/index.html">
-            <img class="bpj" src="../images/avatar-fat.jpg">
+            <img class="bpj" th:src="${userDetails.profile_pic}">
         </a>
 
         <h6 class="qb">
             <a class="boa" href="profile" th:text="${userDetails.name}">You have no name?</a>
         </h6>
 
-        <p class="afo">I wish i was a little bit taller, wish i was a baller, wish i had a girl…&nbsp;also.</p>
+        <p class="afo">User bio will go here.</p>
 
         <ul class="bpk">
             <li class="bpl">

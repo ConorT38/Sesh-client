@@ -8,6 +8,7 @@ public class Status {
     private int user_id;
     private String name;
     private String username;
+    private String profile_pic;
 
     private String message;
     private int location;
@@ -23,10 +24,12 @@ public class Status {
 
     public Status() {}
 
-    public Status(int user_id, String name, String username, String message, int location, int likes, boolean liked, Timestamp date, String going,String maybe, String not_going) {
+    public Status(int id, int user_id, String name, String username, String profile_pic, String message, int location, int likes, boolean liked, Timestamp date, String going, String maybe, String not_going) {
+        this.id = id;
         this.user_id = user_id;
         this.name = name;
         this.username = username;
+        this.profile_pic = profile_pic;
         this.message = message;
         this.location = location;
         this.likes = likes;
@@ -131,6 +134,14 @@ public class Status {
 
     public void setNot_going(String not_going) {
         this.not_going = not_going;
+    }
+
+    public String getProfile_pic() {
+        return profile_pic;
+    }
+
+    public void setProfile_pic(String profile_pic) {
+        this.profile_pic = profile_pic;
     }
 }
 

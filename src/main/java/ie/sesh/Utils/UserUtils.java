@@ -77,6 +77,9 @@ public class UserUtils {
                     case "local_spot":
                         user.setLocal_spot((int) checkNullCastType(value,0));
                         break;
+                    case "profile_pic":
+                        user.setProfile_pic((String) checkNullCastType(value,""));
+                        break;
                 }
             }
             users.add(user);
@@ -137,6 +140,9 @@ public class UserUtils {
                         break;
                     case "local_spot":
                         user.setLocal_spot((int) checkNullCastType(value,0));
+                        break;
+                    case "profile_pic":
+                        user.setProfile_pic((String) checkNullCastType(value,""));
                         break;
                 }
             }

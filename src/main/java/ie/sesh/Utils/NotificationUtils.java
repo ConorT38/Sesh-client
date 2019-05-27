@@ -114,6 +114,7 @@ public class NotificationUtils {
 
     public String buildNotificationData(int id, String notification_data, String notification_type){
     //TODO: Extract user_id and then the relevant id of status/follow/like etc from notification_data, and then utilise the notification type
+        return "";
     }
 
     public Object checkNullCastType(Object value, Object cast){

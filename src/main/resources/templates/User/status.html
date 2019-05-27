@@ -1,6 +1,6 @@
 <div th:fragment="status" th:each="status: ${statuses}">
     <li class="rv b agz">
-        <img class="bos vb yb aff" src="images/avatar-fat.jpg">
+        <img class="bos vb yb aff" th:src="${status.profile_pic}">
         <div class="rw">
             <div class="bpb">
                 <small class="acx axc" name="statusDate" th:text="${status.date}"></small>

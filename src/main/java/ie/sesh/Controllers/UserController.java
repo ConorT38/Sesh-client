@@ -70,4 +70,14 @@ public class UserController {
         model.addAttribute("userDetails",userUtils.getUser(http.load(Integer.parseInt(userId),"","/get/user/profile/@"+username)));
         return new ModelAndView("User/user");
     }
+    @RequestMapping("/user/profile/pic/@{username}")
+    public ModelAndView getUserProfilePic(@CookieValue(name=SESH_COOKIE_NAME, defaultValue = "") String cookie,
+                                       @CookieValue(name="ul", defaultValue = "") String userId,
+                                       @PathVariable("username") String username, Model model) throws Exception{
+        if(cookie == null || cookie.isEmpty()){
+            cookie = "";
+        }
+        model.addAttribute("userDetails",userUtils.getUser(http.load(Integer.parseInt(userId),"","/get/user/profile/pic/@"+username)));
+        return new ModelAndView("User/user");
+    }
 }

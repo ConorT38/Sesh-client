@@ -39,7 +39,7 @@ public class CommentController {
         log.info("Create Comment: "+status_data);
         String result = http.create(Integer.parseInt(id),status_data,"/create/comment");
 
-        notificationUtils.buildNotification(Integer.parseInt(id),status_data, COMMENT_NOTIFICATION_TYPE);
+        notificationUtils.buildNotificationData(Integer.parseInt(id),status_data, COMMENT_NOTIFICATION_TYPE);
 
         return result;
     }

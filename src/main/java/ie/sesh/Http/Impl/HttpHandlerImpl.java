@@ -46,14 +46,20 @@ public class HttpHandlerImpl implements HttpHandler {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
 
-        //map.add("username", Authentication.encrypt(username));
-        //map.add("password", Authentication.hashPassword(password));
+        if(env.getProperty("enable.encryption").equals("true")) {
 
-        map.add("username", username);
-        map.add("password", password);
+            map.add("username", Authentication.encrypt(username));
+            map.add("password", Authentication.hashPassword(password));
+        }
+        else {
+
+            map.add("username", username);
+            map.add("password", password);
+        }
 
         String postResult = post(map,"/login");
         String loginResult = cookieUtils.filterCookieResponse(postResult,cookieUtils.COOKIE_VALUE);
+
         log.info("RETURN FROM API COOKIE: "+loginResult);
 
         JSONArray obj = new JSONArray("["+loginResult+"]");
@@ -82,15 +88,21 @@ public class HttpHandlerImpl implements HttpHandler {
     public String signup(String name, String username, String email, String password, HttpServletResponse response) throws Exception {
 
         MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
-        //map.add("username", Authentication.encrypt(username));
-        //map.add("password", Authentication.hashPassword(password));
-        //map.add("email", Authentication.encrypt(email));
-        //map.add("name", Authentication.encrypt(name));
 
-        map.add("username", username);
-        map.add("password", password);
-        map.add("email", email);
-        map.add("name", name);
+        if(env.getProperty("enable.encryption").equals("true")) {
+            map.add("username", Authentication.encrypt(username));
+            map.add("password", Authentication.hashPassword(password));
+            map.add("email", Authentication.encrypt(email));
+            map.add("name", Authentication.encrypt(name));
+        }
+        else {
+            map.add("username", username);
+            map.add("password", password);
+            map.add("email", email);
+            map.add("name", name);
+
+        }
+
 
         return post(map,"/register/user");
     }
@@ -157,10 +169,13 @@ public class HttpHandlerImpl implements HttpHandler {
     }
 
     public String post(MultiValueMap<String,String> data, String path){
+
         String url = env.getProperty("sesh.api.host")+":"+env.getProperty("sesh.api.port")+path;
         log.info(url);
+
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+
         RestTemplate restTemplate = new RestTemplate();
 
         HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<MultiValueMap<String, String>>(data, headers);

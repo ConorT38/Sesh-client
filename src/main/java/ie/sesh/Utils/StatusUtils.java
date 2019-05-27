@@ -61,6 +61,9 @@ public class StatusUtils {
                     case "username":
                         status.setUsername((String)  checkNullCastType(value,""));
                         break;
+                    case "profile_pic":
+                        status.setProfile_pic((String)  checkNullCastType(value,""));
+                        break;
                     case "message":
                         status.setMessage((String)  checkNullCastType(value,""));
                         break;

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Sesh-client.iml" filepath="$PROJECT_DIR$/.idea/Sesh-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sesh-client.iml" filepath="$PROJECT_DIR$/sesh-client.iml" />
     </modules>
   </component>
 </project>
